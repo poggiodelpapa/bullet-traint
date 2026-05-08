@@ -1,0 +1,59 @@
+name: Monitor Frecciarossa Trenitalia
+
+on:
+  schedule:
+    # 3 volte al giorno — orari UTC (Italia = UTC+2 in estate)
+    # 07:00 UTC = 09:00 Italia
+    # 13:00 UTC = 15:00 Italia
+    # 19:00 UTC = 21:00 Italia
+    - cron: "0 7 * * *"
+    - cron: "0 13 * * *"
+    - cron: "0 19 * * *"
+
+  # Permette di avviare manualmente dal pannello Actions
+  workflow_dispatch:
+    inputs:
+      force_email:
+        description: "Forza invio email di test anche senza disponibilità"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # necessario per committare last_response.json
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Imposta Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installa dipendenze
+        run: pip install requests
+
+      - name: Esegui monitor
+        env:
+          EMAIL_MITTENTE:     ${{ secrets.EMAIL_MITTENTE }}
+          EMAIL_DESTINATARIO: ${{ secrets.EMAIL_DESTINATARIO }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          FORCE_EMAIL:        ${{ github.event.inputs.force_email || 'false' }}
+        run: python monitor_trenitalia.py
+
+      - name: Salva risposta API nel repo (per debug)
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add last_response.json || true
+          git diff --cached --quiet || git commit -m "chore: aggiorna risposta API [skip ci]"
+          git push || true
