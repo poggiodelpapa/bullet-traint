@@ -10,126 +10,129 @@ import requests
 
 # ─── Configurazione ────────────────────────────────────────────────────────────
 
-ORIGINE_ID      = "830001170"   # Venezia Mestre (codice UIC Trenitalia)
-DEST_ID         = "830000219"   # Roma Termini   (codice UIC Trenitalia)
-DATA_VIAGGIO    = "30/07/2025"
-ORA_DA          = 9             # solo treni che partono dalle 09:00
-ORA_A           = 15            # fino alle 15:00
+ORIGINE           = "VENEZIA MESTRE"
+DESTINAZIONE      = "ROMA TERMINI"
+DATA_VIAGGIO      = "30/07/2025"
+ORA_DA            = 9    # partenze dalle 09:00
+ORA_A             = 15   # fino alle 15:00
 SOLO_FRECCIAROSSA = True
 
-EMAIL_MITTENTE      = os.environ["EMAIL_MITTENTE"]
-EMAIL_DESTINATARIO  = os.environ["EMAIL_DESTINATARIO"]
-GMAIL_APP_PASSWORD  = os.environ["GMAIL_APP_PASSWORD"]
-FORCE_EMAIL         = os.environ.get("FORCE_EMAIL", "false").lower() == "true"
+EMAIL_MITTENTE     = os.environ["EMAIL_MITTENTE"]
+EMAIL_DESTINATARIO = os.environ["EMAIL_DESTINATARIO"]
+GMAIL_APP_PASSWORD = os.environ["GMAIL_APP_PASSWORD"]
+FORCE_EMAIL        = os.environ.get("FORCE_EMAIL", "false").lower() == "true"
 
 SENDER_NAME = "Monitor Frecciarossa"
 
-# ─── Chiamata API Trenitalia ────────────────────────────────────────────────────
 
-def cerca_treni():
+# ─── Sessione con cookie (necessaria per l'API) ────────────────────────────────
+
+def crea_sessione():
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/124.0.0.0 Safari/537.36",
+        "Referer": "https://www.lefrecce.it/",
+    })
+    try:
+        session.get("https://www.lefrecce.it/", timeout=15)
+        print("✅ Sessione inizializzata")
+    except Exception as e:
+        print(f"⚠️  Sessione non inizializzata: {e}")
+    return session
+
+
+# ─── Chiamata API Trenitalia ───────────────────────────────────────────────────
+
+def cerca_treni(session):
     """
-    Chiama l'API pubblica di Trenitalia (stessa usata dal sito lefrecce.it)
-    e restituisce la lista di soluzioni trovate.
+    Usa l'endpoint /msite/api/solutions di lefrecce.it.
+    Accetta nomi stazione testuali e ora intera (granularità = 1 ora),
+    quindi iteriamo su ogni ora della fascia richiesta.
     """
-    url = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions"
+    soluzioni_trovate = []
+    viste = set()
 
-    payload = {
-        "departureLocationId": ORIGINE_ID,
-        "arrivalLocationId":   DEST_ID,
-        "departureTime":       f"{DATA_VIAGGIO}T09:00:00",
-        "adults":              1,
-        "children":            0,
-        "criteria": {
-            "frecceOnly":      False,
-            "regionalOnly":    False,
-            "noChanges":       False,
-            "order":           "DEPARTURE_DATE",
-            "limit":           10,
-            "offset":          0
-        },
-        "selectedCategories": []
-    }
-
-    headers = {
-        "Content-Type":  "application/json",
-        "User-Agent":    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                         "AppleWebKit/537.36 (KHTML, like Gecko) "
-                         "Chrome/124.0.0.0 Safari/537.36",
-        "Referer":       "https://www.lefrecce.it/",
-        "Origin":        "https://www.lefrecce.it",
-    }
-
-    resp = requests.post(url, json=payload, headers=headers, timeout=30)
-    resp.raise_for_status()
-    return resp.json()
-
-
-# ─── Parsing risultati ─────────────────────────────────────────────────────────
-
-def parse_soluzioni(data):
-    """
-    Filtra le soluzioni per:
-    - Solo Frecciarossa (se SOLO_FRECCIAROSSA=True)
-    - Partenza tra ORA_DA e ORA_A
-    - Acquistabile (non 'non acquistabile')
-    """
-    soluzioni = data.get("solutions", [])
-    trovati = []
-
-    for sol in soluzioni:
-        # Estrai ora di partenza
-        dep_str = sol.get("departureTime", "")  # es. "2025-07-30T09:38:00"
+    for ora in range(ORA_DA, ORA_A):
+        url = "https://www.lefrecce.it/msite/api/solutions"
+        params = {
+            "origin":       ORIGINE,
+            "destination":  DESTINAZIONE,
+            "arflag":       "A",
+            "adate":        DATA_VIAGGIO,
+            "atime":        str(ora),
+            "adultno":      1,
+            "childno":      0,
+            "direction":    "A",
+            "frecce":       "false",
+            "onlyRegional": "false",
+        }
         try:
-            dep_dt = datetime.fromisoformat(dep_str)
-        except Exception:
+            resp = session.get(url, params=params, timeout=20)
+            resp.raise_for_status()
+            data = resp.json()
+            print(f"   ore {ora:02d}:00 → {len(data)} soluzioni")
+        except Exception as e:
+            print(f"   ore {ora:02d}:00 → Errore: {e}")
+            continue
+
+        for sol in data:
+            sid = sol.get("idsolution", "")
+            if sid and sid in viste:
+                continue
+            viste.add(sid)
+            soluzioni_trovate.append(sol)
+
+    return soluzioni_trovate
+
+
+# ─── Parsing e filtro ──────────────────────────────────────────────────────────
+
+def parse_soluzioni(soluzioni_raw):
+    risultati = []
+
+    for sol in soluzioni_raw:
+        dep_ts = sol.get("departuretime", 0)
+        arr_ts = sol.get("arrivaltime", 0)
+        dep_dt = datetime.fromtimestamp(dep_ts / 1000) if dep_ts else None
+        arr_dt = datetime.fromtimestamp(arr_ts / 1000) if arr_ts else None
+
+        if dep_dt is None:
             continue
 
         ora_partenza = dep_dt.hour + dep_dt.minute / 60
-
         if not (ORA_DA <= ora_partenza < ORA_A):
             continue
 
-        # Verifica che sia Frecciarossa
+        treni = sol.get("trainlist", [])
+        nomi_treni = " | ".join(t.get("trainidentifier", "") for t in treni)
+
         if SOLO_FRECCIAROSSA:
-            legs = sol.get("legs", [])
-            is_frecciarossa = any(
-                "FRECCIAROSSA" in (leg.get("trainCategory", "") or "").upper()
-                for leg in legs
+            is_fr = any(
+                "FRECCIAROSSA" in t.get("trainidentifier", "").upper()
+                for t in treni
             )
-            if not is_frecciarossa:
+            if not is_fr:
                 continue
 
-        # Verifica acquistabilità
-        # Il campo può chiamarsi 'saleable', 'status', 'bookable', ecc.
-        # Proviamo tutte le varianti note
-        saleable = (
-            sol.get("saleable") or
-            sol.get("bookable") or
-            sol.get("purchasable") or
-            (sol.get("status", "").upper() not in ("NOT_SALEABLE", "NOT_AVAILABLE", ""))
-        )
+        # saleable + bookable + prezzo > 0 → acquistabile
+        min_price    = sol.get("minprice", 0)
+        saleable     = sol.get("saleable", False)
+        bookable     = sol.get("bookable", False)
+        acquistabile = bool(saleable) and bool(bookable) and (min_price > 0)
 
-        # Raccogliamo info utili
-        arr_str   = sol.get("arrivalTime", "")
-        prezzo    = sol.get("minPrice", {}).get("amount", "N/D")
-        valuta    = sol.get("minPrice", {}).get("currency", "EUR")
-        cambi     = len(sol.get("legs", [])) - 1
-        treni_str = " / ".join(
-            f"{leg.get('trainCategory','')} {leg.get('trainNumber','')}".strip()
-            for leg in sol.get("legs", [])
-        )
-
-        trovati.append({
-            "treno":       treni_str,
-            "partenza":    dep_str,
-            "arrivo":      arr_str,
-            "prezzo":      f"{prezzo} {valuta}",
-            "cambi":       cambi,
-            "acquistabile": bool(saleable),
-            "raw":         sol,
+        risultati.append({
+            "treno":        nomi_treni,
+            "partenza":     dep_dt.strftime("%d/%m/%Y %H:%M"),
+            "arrivo":       arr_dt.strftime("%H:%M") if arr_dt else "—",
+            "durata":       sol.get("duration", "—"),
+            "prezzo":       f"{min_price:.2f} €" if min_price else "N/D",
+            "cambi":        sol.get("changesno", 0),
+            "acquistabile": acquistabile,
         })
 
-    return trovati
+    return risultati
 
 
 # ─── Email ─────────────────────────────────────────────────────────────────────
@@ -137,70 +140,70 @@ def parse_soluzioni(data):
 def build_email_html(soluzioni_ok):
     righe = ""
     for s in soluzioni_ok:
-        dep = s["partenza"].replace("T", " ")[:16]
-        arr = s["arrivo"].replace("T", " ")[:16]
+        cambi_str = "Diretto" if s["cambi"] == 0 else f"{s['cambi']} cambio/i"
         righe += f"""
         <tr>
-            <td style="padding:8px;border-bottom:1px solid #eee;">{s['treno']}</td>
-            <td style="padding:8px;border-bottom:1px solid #eee;">{dep}</td>
-            <td style="padding:8px;border-bottom:1px solid #eee;">{arr}</td>
-            <td style="padding:8px;border-bottom:1px solid #eee;">{s['prezzo']}</td>
-            <td style="padding:8px;border-bottom:1px solid #eee;">
-                {'Diretto' if s['cambi'] == 0 else f"{s['cambi']} cambio/i"}
-            </td>
+            <td style="padding:10px;border-bottom:1px solid #eee;">{s['treno']}</td>
+            <td style="padding:10px;border-bottom:1px solid #eee;">{s['partenza']}</td>
+            <td style="padding:10px;border-bottom:1px solid #eee;">{s['arrivo']}</td>
+            <td style="padding:10px;border-bottom:1px solid #eee;">{s['durata']}</td>
+            <td style="padding:10px;border-bottom:1px solid #eee;font-weight:bold;color:#d62e2e;">{s['prezzo']}</td>
+            <td style="padding:10px;border-bottom:1px solid #eee;">{cambi_str}</td>
         </tr>"""
 
-    return f"""
-    <html><body style="font-family:sans-serif;max-width:700px;margin:auto;">
-    <h2>🚄 Frecciarossa disponibile! Venezia Mestre → Roma Termini</h2>
-    <p>Data: <strong>{DATA_VIAGGIO}</strong> | Partenze tra le {ORA_DA}:00 e le {ORA_A}:00</p>
-
-    <table style="width:100%;border-collapse:collapse;font-size:0.9em;">
-        <thead>
-            <tr style="background:#d62e2e;color:white;">
-                <th style="padding:10px;text-align:left;">Treno</th>
-                <th style="padding:10px;text-align:left;">Partenza</th>
-                <th style="padding:10px;text-align:left;">Arrivo</th>
-                <th style="padding:10px;text-align:left;">Prezzo</th>
-                <th style="padding:10px;text-align:left;">Cambi</th>
-            </tr>
-        </thead>
-        <tbody>{righe}</tbody>
-    </table>
-
-    <br>
-    <a href="https://www.lefrecce.it" style="background:#d62e2e;color:white;padding:12px 24px;
-       border-radius:6px;text-decoration:none;display:inline-block;font-size:1em;">
-       ✈ Acquista ora su lefrecce.it →
-    </a>
-
-    <p style="color:#888;font-size:0.8em;margin-top:30px;">
-        Monitoraggio automatico via GitHub Actions — {datetime.now().strftime('%d/%m/%Y %H:%M')} UTC
-    </p>
-    </body></html>
-    """
+    return f"""<html><body style="font-family:sans-serif;max-width:750px;margin:auto;color:#222;">
+<h2 style="color:#d62e2e;">🚄 Frecciarossa disponibile!</h2>
+<p>
+  <strong>Tratta:</strong> {ORIGINE} → {DESTINAZIONE}<br>
+  <strong>Data:</strong> {DATA_VIAGGIO} &nbsp;|&nbsp;
+  <strong>Fascia:</strong> {ORA_DA}:00 – {ORA_A}:00
+</p>
+<table style="width:100%;border-collapse:collapse;font-size:0.9em;">
+  <thead>
+    <tr style="background:#d62e2e;color:white;">
+      <th style="padding:10px;text-align:left;">Treno</th>
+      <th style="padding:10px;text-align:left;">Partenza</th>
+      <th style="padding:10px;text-align:left;">Arrivo</th>
+      <th style="padding:10px;text-align:left;">Durata</th>
+      <th style="padding:10px;text-align:left;">Prezzo min.</th>
+      <th style="padding:10px;text-align:left;">Cambi</th>
+    </tr>
+  </thead>
+  <tbody>{righe}</tbody>
+</table>
+<br>
+<a href="https://www.lefrecce.it"
+   style="background:#d62e2e;color:white;padding:12px 28px;border-radius:6px;
+          text-decoration:none;display:inline-block;font-size:1em;font-weight:bold;">
+  🎫 Acquista ora su lefrecce.it →
+</a>
+<p style="color:#aaa;font-size:0.75em;margin-top:30px;">
+  Monitoraggio automatico via GitHub Actions — {datetime.now().strftime('%d/%m/%Y %H:%M')} UTC
+</p>
+</body></html>"""
 
 
 def send_email(soluzioni_ok):
     msg = MIMEMultipart("alternative")
     msg["From"]    = f"{SENDER_NAME} <{EMAIL_MITTENTE}>"
     msg["To"]      = EMAIL_DESTINATARIO
-    msg["Subject"] = f"🚄 Frecciarossa disponibile! VE Mestre → Roma — {DATA_VIAGGIO}"
+    msg["Subject"] = f"🚄 Frecciarossa disponibile! {ORIGINE} → {DESTINAZIONE} — {DATA_VIAGGIO}"
 
-    n = len(soluzioni_ok)
     body_plain = (
-        f"OTTIMA NOTIZIA! {n} Frecciarossa acquistabile/i trovato/i.\n\n"
-        f"Tratta: Venezia Mestre → Roma Termini\n"
-        f"Data: {DATA_VIAGGIO} | Fascia oraria: {ORA_DA}:00 – {ORA_A}:00\n\n"
+        f"OTTIMA NOTIZIA! {len(soluzioni_ok)} Frecciarossa acquistabile/i trovato/i.\n\n"
+        f"Tratta: {ORIGINE} → {DESTINAZIONE}\n"
+        f"Data: {DATA_VIAGGIO} | Fascia: {ORA_DA}:00 – {ORA_A}:00\n\n"
     )
     for s in soluzioni_ok:
         body_plain += (
             f"  🚄 {s['treno']}\n"
-            f"     Partenza: {s['partenza']}\n"
-            f"     Arrivo:   {s['arrivo']}\n"
-            f"     Prezzo:   {s['prezzo']}\n\n"
+            f"     Partenza : {s['partenza']}\n"
+            f"     Arrivo   : {s['arrivo']}\n"
+            f"     Durata   : {s['durata']}\n"
+            f"     Prezzo   : {s['prezzo']}\n"
+            f"     Cambi    : {s['cambi']}\n\n"
         )
-    body_plain += "Acquista subito su: https://www.lefrecce.it\n"
+    body_plain += "👉 Acquista subito su: https://www.lefrecce.it\n"
 
     msg.attach(MIMEText(body_plain, "plain"))
     msg.attach(MIMEText(build_email_html(soluzioni_ok), "html"))
@@ -214,50 +217,41 @@ def send_email(soluzioni_ok):
 # ─── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"🔍 Cerco Frecciarossa {DATA_VIAGGIO} — "
-          f"Venezia Mestre → Roma Termini — "
-          f"fascia {ORA_DA}:00/{ORA_A}:00")
+    print(f"🔍 Cerco Frecciarossa {DATA_VIAGGIO}")
+    print(f"   {ORIGINE} → {DESTINAZIONE} | fascia {ORA_DA}:00–{ORA_A}:00\n")
 
-    try:
-        data = cerca_treni()
-    except requests.HTTPError as e:
-        print(f"❌ Errore HTTP dall'API Trenitalia: {e}")
-        raise
-    except Exception as e:
-        print(f"❌ Errore imprevisto: {e}")
-        raise
+    session = crea_sessione()
+    soluzioni_raw = cerca_treni(session)
 
-    # Salva risposta grezza per debug
     with open("last_response.json", "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-    print("💾 Risposta API salvata in last_response.json")
+        json.dump(soluzioni_raw, f, ensure_ascii=False, indent=2)
+    print(f"\n💾 {len(soluzioni_raw)} soluzioni salvate in last_response.json")
 
-    soluzioni = parse_soluzioni(data)
-    print(f"📋 Soluzioni Frecciarossa nella fascia oraria: {len(soluzioni)}")
-
+    soluzioni    = parse_soluzioni(soluzioni_raw)
     soluzioni_ok = [s for s in soluzioni if s["acquistabile"]]
-    print(f"✅ Di cui acquistabili: {len(soluzioni_ok)}")
+
+    print(f"\n📋 Frecciarossa nella fascia oraria: {len(soluzioni)}")
+    print(f"✅ Di cui acquistabili: {len(soluzioni_ok)}\n")
 
     for s in soluzioni:
         stato = "✅ ACQUISTABILE" if s["acquistabile"] else "❌ non disponibile"
-        print(f"   {stato} | {s['treno']} | {s['partenza'][:16]} → {s['arrivo'][:16]} | {s['prezzo']}")
+        print(f"   {stato} | {s['treno']} | {s['partenza']} → {s['arrivo']} | {s['prezzo']}")
 
-    if soluzioni_ok or FORCE_EMAIL:
-        if not soluzioni_ok and FORCE_EMAIL:
-            print("🧪 FORCE_EMAIL attivo — invio email di test anche senza disponibilità.")
-            # Crea una riga finta per il test
-            soluzioni_ok = [{
-                "treno":        "FRECCIAROSSA 9999 (TEST)",
-                "partenza":     f"{DATA_VIAGGIO.replace('/', '-'[::-1])}T10:00:00",
-                "arrivo":       f"{DATA_VIAGGIO.replace('/', '-'[::-1])}T13:52:00",
-                "prezzo":       "TEST EUR",
-                "cambi":        0,
-                "acquistabile": True,
-                "raw":          {},
-            }]
+    if soluzioni_ok:
         send_email(soluzioni_ok)
+    elif FORCE_EMAIL:
+        print("\n🧪 FORCE_EMAIL attivo — invio email di test.")
+        fake = [{
+            "treno":   "FRECCIAROSSA 9411 (TEST)",
+            "partenza": f"{DATA_VIAGGIO} 09:38",
+            "arrivo":  "13:30",
+            "durata":  "3h 52min",
+            "prezzo":  "— TEST —",
+            "cambi":   0,
+        }]
+        send_email(fake)
     else:
-        print("😴 Nessun Frecciarossa acquistabile al momento. Nessuna email inviata.")
+        print("\n😴 Nessun Frecciarossa acquistabile. Nessuna email inviata.")
 
 
 if __name__ == "__main__":
