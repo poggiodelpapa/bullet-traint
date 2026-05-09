@@ -29,7 +29,7 @@ LOGO_URL = "https://raw.githubusercontent.com/poggiodelpapa/bullet-traint/main/b
 BRAND_COLOR = "#017a8e"
 
 
-# ─── Lookup ID stazione dall'API ──────────────────────────────────────────────
+# ─── ID stazioni (verificati il 09/05/2026) ───────────────────────────────────
 
 HEADERS_BASE = {
     "Content-Type": "application/json",
@@ -41,24 +41,24 @@ HEADERS_BASE = {
     "Referer":      "https://www.lefrecce.it/",
 }
 
+STAZIONE_ID_CACHE = {
+    "VENEZIA MESTRE": 830002589,
+    "ROMA TERMINI":   830008409,
+}
+
 
 def get_station_id(nome_stazione):
-    """
-    Risolve il nome di una stazione nel suo ID numerico
-    usando l'endpoint di autocompletamento dell'API BFF.
-    """
+    """Restituisce l'ID stazione dalla cache; se non presente lo risolve via API."""
+    cached = STAZIONE_ID_CACHE.get(nome_stazione.upper())
+    if cached:
+        return cached
     url = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/locations/search"
-    params = {"name": nome_stazione, "limit": 5}
-    resp = requests.get(url, params=params, headers=HEADERS_BASE, timeout=15)
+    resp = requests.get(url, params={"name": nome_stazione, "limit": 5},
+                        headers=HEADERS_BASE, timeout=15)
     resp.raise_for_status()
     risultati = resp.json()
-
-    print(f"   Lookup '{nome_stazione}': {risultati}")
-
     if not risultati:
         raise ValueError(f"Stazione non trovata: {nome_stazione}")
-
-    # Prendi la corrispondenza esatta se esiste, altrimenti la prima
     for r in risultati:
         if r.get("name", "").upper() == nome_stazione.upper():
             return r["id"]
@@ -72,12 +72,9 @@ def cerca_treni():
     Usa l'endpoint BFF di lefrecce.it con POST JSON.
     Documentazione: https://github.com/SimoDax/Trenitalia-API/wiki/Nuove-API-Trenitalia-lefrecce.it
     """
-    # Risolvi gli ID stazione dinamicamente
-    print("   Risolvo ID stazioni...")
     id_origine = get_station_id(ORIGINE)
     id_dest    = get_station_id(DESTINAZIONE)
-    print(f"   {ORIGINE} → ID {id_origine}")
-    print(f"   {DESTINAZIONE} → ID {id_dest}")
+    print(f"   {ORIGINE} (ID {id_origine}) → {DESTINAZIONE} (ID {id_dest})")
 
     url = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions"
 
@@ -104,8 +101,7 @@ def cerca_treni():
     }
 
     resp = requests.post(url, json=payload, headers=HEADERS_BASE, timeout=30)
-    print(f"   API soluzioni → HTTP {resp.status_code} | {len(resp.text)} chars")
-    print(f"   Risposta (primi 300 chars): {resp.text[:300]}")
+    print(f"   API soluzioni → HTTP {resp.status_code}")
     resp.raise_for_status()
     data = resp.json()
 
@@ -138,13 +134,6 @@ def parse_soluzioni(soluzioni_raw):
       node.train.trainCategory → "Frecciarossa", "Regionale", ecc.
       node.train.name          → numero treno
     """
-    for i, sol in enumerate(soluzioni_raw):
-        nodes = sol.get("nodes", [])
-        dep   = sol.get("departureTime", "—")[:16]
-        stat  = sol.get("status", "—")
-        treni = [f"{n.get('train',{}).get('trainCategory','?')} {n.get('train',{}).get('name','?')}" for n in nodes]
-        print(f"   [{i}] {dep} | {stat} | {' + '.join(treni) or '(no nodes)'}")
-
     risultati = []
 
     for sol in soluzioni_raw:
