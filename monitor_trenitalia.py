@@ -40,17 +40,19 @@ STAZIONE_ID = {
 
 def cerca_treni():
     """
-    Usa l'endpoint BFF di lefrecce.it con POST JSON —
-    la stessa chiamata che fa il browser. Non richiede sessione o cookie.
+    Usa l'endpoint BFF di lefrecce.it con POST JSON.
+    Payload e struttura risposta documentati in:
+    https://github.com/SimoDax/Trenitalia-API/wiki/Nuove-API-Trenitalia-lefrecce.it
     """
     url = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions"
 
     data_iso = datetime.strptime(DATA_VIAGGIO, "%d/%m/%Y").strftime("%Y-%m-%d")
-    departure_time = f"{data_iso}T{ORA_DA:02d}:00:00"
+    # Il timezone +02:00 (ora legale italiana) è richiesto dall'API
+    departure_time = f"{data_iso}T{ORA_DA:02d}:00:00.000+02:00"
 
     payload = {
-        "departureLocationId": STAZIONE_ID[ORIGINE],
-        "arrivalLocationId":   STAZIONE_ID[DESTINAZIONE],
+        "departureLocationId": int(STAZIONE_ID[ORIGINE]),
+        "arrivalLocationId":   int(STAZIONE_ID[DESTINAZIONE]),
         "departureTime":       departure_time,
         "adults":              1,
         "children":            0,
@@ -59,10 +61,12 @@ def cerca_treni():
             "regionalOnly": False,
             "noChanges":    False,
             "order":        "DEPARTURE_DATE",
-            "limit":        20,
+            "limit":        10,
             "offset":       0,
         },
-        "selectedCategories": [],
+        "advancedSearchRequest": {
+            "bestFare": False,
+        },
     }
 
     headers = {
@@ -81,12 +85,7 @@ def cerca_treni():
     resp.raise_for_status()
     data = resp.json()
 
-    # L'API può restituire {"solutions": [...]} oppure direttamente una lista
-    if isinstance(data, dict):
-        soluzioni = data.get("solutions", data.get("trainSolutions", []))
-    else:
-        soluzioni = data
-
+    soluzioni = data.get("solutions", [])
     print(f"   Soluzioni totali ricevute: {len(soluzioni)}")
     return soluzioni
 
@@ -94,27 +93,29 @@ def cerca_treni():
 # ─── Parsing e filtro ──────────────────────────────────────────────────────────
 
 def parse_soluzioni(soluzioni_raw):
+    """
+    Struttura risposta (da documentazione SimoDax):
+    solution.departureTime  → stringa ISO
+    solution.arrivalTime    → stringa ISO
+    solution.status         → "SALEABLE" | "INHIBITED" | "NOT_SALEABLE"
+    solution.price.amount   → float prezzo minimo
+    solution.nodes[]        → treni nella soluzione
+      node.train.trainCategory → "Frecciarossa", "Regionale", ecc.
+      node.train.name          → numero treno
+    """
     risultati = []
 
     for sol in soluzioni_raw:
-        # Il BFF usa "departureTime" / "arrivalTime" come stringhe ISO
-        dep_str = sol.get("departureTime") or sol.get("departuretime", "")
-        arr_str = sol.get("arrivalTime")   or sol.get("arrivaltime", "")
+        dep_str = sol.get("departureTime", "")
+        arr_str = sol.get("arrivalTime", "")
 
-        # Gestisce sia timestamp in ms (int) che stringa ISO
         try:
-            if isinstance(dep_str, int):
-                dep_dt = datetime.fromtimestamp(dep_str / 1000)
-            else:
-                dep_dt = datetime.fromisoformat(dep_str[:19])
+            dep_dt = datetime.fromisoformat(dep_str)
         except Exception:
             continue
 
         try:
-            if isinstance(arr_str, int):
-                arr_dt = datetime.fromtimestamp(arr_str / 1000)
-            else:
-                arr_dt = datetime.fromisoformat(arr_str[:19])
+            arr_dt = datetime.fromisoformat(arr_str)
         except Exception:
             arr_dt = None
 
@@ -122,44 +123,36 @@ def parse_soluzioni(soluzioni_raw):
         if not (ORA_DA <= ora_partenza < ORA_A):
             continue
 
-        # Nomi treni: BFF usa "legs" con "trainCategory" + "trainNumber"
-        legs = sol.get("legs", [])
-        treni = sol.get("trainlist", [])
+        # Nomi treni dai nodes
+        nodes = sol.get("nodes", [])
+        nomi_treni = " | ".join(
+            f"{n.get('train', {}).get('trainCategory', '')} "
+            f"{n.get('train', {}).get('name', '')}".strip()
+            for n in nodes
+        )
 
-        if legs:
-            nomi_treni = " | ".join(
-                f"{l.get('trainCategory','')} {l.get('trainNumber','')}".strip()
-                for l in legs
+        if SOLO_FRECCIAROSSA:
+            is_fr = any(
+                "FRECCIAROSSA" in n.get("train", {}).get("trainCategory", "").upper()
+                for n in nodes
             )
-            is_fr = any("FRECCIAROSSA" in l.get("trainCategory", "").upper() for l in legs)
-        elif treni:
-            nomi_treni = " | ".join(t.get("trainidentifier", "") for t in treni)
-            is_fr = any("FRECCIAROSSA" in t.get("trainidentifier", "").upper() for t in treni)
-        else:
-            nomi_treni = sol.get("name", "—")
-            is_fr = "FRECCIAROSSA" in nomi_treni.upper()
+            if not is_fr:
+                continue
 
-        if SOLO_FRECCIAROSSA and not is_fr:
-            continue
+        # Acquistabilità: status == "SALEABLE"
+        status       = sol.get("status", "")
+        acquistabile = (status == "SALEABLE")
 
-        # Prezzo e acquistabilità
-        min_price_obj = sol.get("minPrice", {})
-        if isinstance(min_price_obj, dict):
-            min_price = min_price_obj.get("amount", 0) or 0
-        else:
-            min_price = sol.get("minprice", 0) or 0
+        # Prezzo
+        price_obj = sol.get("price", {}) or {}
+        min_price = price_obj.get("amount", 0) or 0
 
-        saleable     = sol.get("saleable", sol.get("bookable", False))
-        acquistabile = bool(saleable) and float(min_price) > 0
-
-        # Durata
-        durata = sol.get("duration", sol.get("travelTime", "—"))
-
-        # Cambi
-        cambi = sol.get("changesno", len(legs) - 1 if len(legs) > 1 else 0)
+        # Durata e cambi
+        durata = sol.get("duration", "—")
+        cambi  = max(0, len(nodes) - 1)
 
         risultati.append({
-            "treno":        nomi_treni,
+            "treno":        nomi_treni or "—",
             "partenza":     dep_dt.strftime("%d/%m/%Y %H:%M"),
             "arrivo":       arr_dt.strftime("%H:%M") if arr_dt else "—",
             "durata":       str(durata),
