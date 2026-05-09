@@ -109,7 +109,18 @@ def cerca_treni():
     resp.raise_for_status()
     data = resp.json()
 
-    soluzioni = data.get("solutions", [])
+    soluzioni_raw = data.get("solutions", [])
+    # Ogni elemento ha la struttura {"solution": {...}, "messages": [...]}
+    # Estraiamo il dict interno "solution"
+    soluzioni = []
+    for item in soluzioni_raw:
+        if isinstance(item, dict) and "solution" in item:
+            sol = item["solution"]
+            sol["_messages"] = item.get("messages", [])
+            soluzioni.append(sol)
+        else:
+            soluzioni.append(item)
+
     print(f"   Soluzioni totali ricevute: {len(soluzioni)}")
     return soluzioni
 
@@ -127,6 +138,13 @@ def parse_soluzioni(soluzioni_raw):
       node.train.trainCategory → "Frecciarossa", "Regionale", ecc.
       node.train.name          → numero treno
     """
+    for i, sol in enumerate(soluzioni_raw):
+        nodes = sol.get("nodes", [])
+        dep   = sol.get("departureTime", "—")[:16]
+        stat  = sol.get("status", "—")
+        treni = [f"{n.get('train',{}).get('trainCategory','?')} {n.get('train',{}).get('name','?')}" for n in nodes]
+        print(f"   [{i}] {dep} | {stat} | {' + '.join(treni) or '(no nodes)'}")
+
     risultati = []
 
     for sol in soluzioni_raw:
@@ -166,7 +184,6 @@ def parse_soluzioni(soluzioni_raw):
         # Acquistabilità: status == "SALEABLE"
         status       = sol.get("status", "")
         acquistabile = (status == "SALEABLE")
-
         # Prezzo
         price_obj = sol.get("price", {}) or {}
         min_price = price_obj.get("amount", 0) or 0
