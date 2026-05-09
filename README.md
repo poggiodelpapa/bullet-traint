@@ -1,6 +1,9 @@
-![Bullet Train't](btanew.png)
+<div align="center">
 
-# 🚄 Bullet Train't
+# 🚄
+# Bullet Train't
+
+</div>
 
 A lightweight GitHub Actions bot that monitors Trenitalia's availability for a specific route and sends a branded email notification the moment a ticket becomes purchasable.
 
