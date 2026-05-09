@@ -74,6 +74,7 @@ def cerca_treni(session):
         }
         try:
             resp = session.get(url, params=params, timeout=20)
+            print(f"   ore {ora:02d}:00 → HTTP {resp.status_code} | {len(resp.text)} chars | {resp.text[:200]}")
             resp.raise_for_status()
             data = resp.json()
             print(f"   ore {ora:02d}:00 → {len(data)} soluzioni")
