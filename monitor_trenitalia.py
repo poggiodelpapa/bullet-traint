@@ -92,7 +92,7 @@ def cerca_treni():
             "regionalOnly": False,
             "noChanges":    False,
             "order":        "DEPARTURE_DATE",
-            "limit":        10,
+            "limit":        30,
             "offset":       0,
         },
         "advancedSearchRequest": {
@@ -106,19 +106,9 @@ def cerca_treni():
     data = resp.json()
 
     soluzioni_raw = data.get("solutions", [])
-    # Ogni elemento ha la struttura {"solution": {...}, "messages": [...]}
-    # Estraiamo il dict interno "solution"
-    soluzioni = []
-    for item in soluzioni_raw:
-        if isinstance(item, dict) and "solution" in item:
-            sol = item["solution"]
-            sol["_messages"] = item.get("messages", [])
-            soluzioni.append(sol)
-        else:
-            soluzioni.append(item)
-
-    print(f"   Soluzioni totali ricevute: {len(soluzioni)}")
-    return soluzioni
+    # L'API restituisce un array flat di oggetti ticket diretti (senza wrapper)
+    print(f"   Soluzioni totali ricevute: {len(soluzioni_raw)}")
+    return soluzioni_raw
 
 
 # ─── Parsing e filtro ──────────────────────────────────────────────────────────
@@ -313,7 +303,7 @@ def build_email_html(soluzioni_ok):
                    border-top:1px solid #cde8ec;text-align:center;">
           <p style="margin:0;color:#aaa;font-size:0.72em;">
             Monitoraggio automatico via GitHub Actions —
-            {datetime.now().strftime('%d/%m/%Y %H:%M')} UTC
+            {datetime.utcnow().strftime('%d/%m/%Y %H:%M')} UTC
           </p>
         </td>
       </tr>
@@ -382,12 +372,13 @@ def main():
     elif FORCE_EMAIL:
         print("\n🧪 FORCE_EMAIL attivo — invio email di test.")
         fake = [{
-            "treno":   "FRECCIAROSSA 9411 (TEST)",
-            "partenza": f"{DATA_VIAGGIO} 09:38",
-            "arrivo":  "13:30",
-            "durata":  "3h 52min",
-            "prezzo":  "— TEST —",
-            "cambi":   0,
+            "treno":        "FRECCIAROSSA 9411 (TEST)",
+            "partenza":     f"{DATA_VIAGGIO} 09:38",
+            "arrivo":       "13:30",
+            "durata":       "3h 52min",
+            "prezzo":       "— TEST —",
+            "cambi":        0,
+            "acquistabile": True,
         }]
         send_email(fake)
     else:
