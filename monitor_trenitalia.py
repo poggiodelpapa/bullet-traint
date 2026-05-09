@@ -12,7 +12,7 @@ import requests
 
 ORIGINE           = "VENEZIA MESTRE"
 DESTINAZIONE      = "ROMA TERMINI"
-DATA_VIAGGIO      = "30/07/2025"
+DATA_VIAGGIO      = "30/07/2026"
 ORA_DA            = 9    # partenze dalle 09:00
 ORA_A             = 15   # fino alle 15:00
 SOLO_FRECCIAROSSA = True
@@ -199,7 +199,7 @@ def parse_soluzioni(soluzioni_raw):
 def build_card(s):
     """Genera una card per ogni treno — leggibile sia su desktop che mobile."""
     cambi_str = "🔄 " + str(s["cambi"]) + " cambio/i" if s["cambi"] else "✅ Diretto"
-    dep_parts  = s["partenza"].split(" ")  # ["30/07/2025", "09:38"]
+    dep_parts  = s["partenza"].split(" ")  # ["30/07/2026", "09:38"]
     dep_data   = dep_parts[0] if len(dep_parts) > 1 else ""
     dep_ora    = dep_parts[1] if len(dep_parts) > 1 else dep_parts[0]
 
