@@ -29,67 +29,66 @@ LOGO_URL = "https://raw.githubusercontent.com/poggiodelpapa/bullet-traint/main/b
 BRAND_COLOR = "#017a8e"
 
 
-# ─── Sessione con cookie (necessaria per l'API) ────────────────────────────────
-
-def crea_sessione():
-    session = requests.Session()
-    session.headers.update({
-        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                      "AppleWebKit/537.36 (KHTML, like Gecko) "
-                      "Chrome/124.0.0.0 Safari/537.36",
-        "Referer": "https://www.lefrecce.it/",
-    })
-    try:
-        session.get("https://www.lefrecce.it/", timeout=15)
-        print("✅ Sessione inizializzata")
-    except Exception as e:
-        print(f"⚠️  Sessione non inizializzata: {e}")
-    return session
+# ─── ID stazioni UIC Trenitalia ───────────────────────────────────────────────
+STAZIONE_ID = {
+    "VENEZIA MESTRE": "830001170",
+    "ROMA TERMINI":   "830000219",
+}
 
 
-# ─── Chiamata API Trenitalia ───────────────────────────────────────────────────
+# ─── Chiamata API Trenitalia (BFF POST) ───────────────────────────────────────
 
-def cerca_treni(session):
+def cerca_treni():
     """
-    Usa l'endpoint /msite/api/solutions di lefrecce.it.
-    Accetta nomi stazione testuali e ora intera (granularità = 1 ora),
-    quindi iteriamo su ogni ora della fascia richiesta.
+    Usa l'endpoint BFF di lefrecce.it con POST JSON —
+    la stessa chiamata che fa il browser. Non richiede sessione o cookie.
     """
-    soluzioni_trovate = []
-    viste = set()
+    url = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions"
 
-    for ora in range(ORA_DA, ORA_A):
-        url = "https://www.lefrecce.it/msite/api/solutions"
-        params = {
-            "origin":       ORIGINE,
-            "destination":  DESTINAZIONE,
-            "arflag":       "A",
-            "adate":        DATA_VIAGGIO,
-            "atime":        str(ora),
-            "adultno":      1,
-            "childno":      0,
-            "direction":    "A",
-            "frecce":       "false",
-            "onlyRegional": "false",
-        }
-        try:
-            resp = session.get(url, params=params, timeout=20)
-            print(f"   ore {ora:02d}:00 → HTTP {resp.status_code} | {len(resp.text)} chars | {resp.text[:200]}")
-            resp.raise_for_status()
-            data = resp.json()
-            print(f"   ore {ora:02d}:00 → {len(data)} soluzioni")
-        except Exception as e:
-            print(f"   ore {ora:02d}:00 → Errore: {e}")
-            continue
+    data_iso = datetime.strptime(DATA_VIAGGIO, "%d/%m/%Y").strftime("%Y-%m-%d")
+    departure_time = f"{data_iso}T{ORA_DA:02d}:00:00"
 
-        for sol in data:
-            sid = sol.get("idsolution", "")
-            if sid and sid in viste:
-                continue
-            viste.add(sid)
-            soluzioni_trovate.append(sol)
+    payload = {
+        "departureLocationId": STAZIONE_ID[ORIGINE],
+        "arrivalLocationId":   STAZIONE_ID[DESTINAZIONE],
+        "departureTime":       departure_time,
+        "adults":              1,
+        "children":            0,
+        "criteria": {
+            "frecceOnly":   False,
+            "regionalOnly": False,
+            "noChanges":    False,
+            "order":        "DEPARTURE_DATE",
+            "limit":        20,
+            "offset":       0,
+        },
+        "selectedCategories": [],
+    }
 
-    return soluzioni_trovate
+    headers = {
+        "Content-Type": "application/json",
+        "Accept":       "application/json",
+        "User-Agent":   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/124.0.0.0 Safari/537.36",
+        "Origin":       "https://www.lefrecce.it",
+        "Referer":      "https://www.lefrecce.it/",
+    }
+
+    resp = requests.post(url, json=payload, headers=headers, timeout=30)
+    print(f"   API → HTTP {resp.status_code} | {len(resp.text)} chars")
+    print(f"   Risposta (primi 300 chars): {resp.text[:300]}")
+    resp.raise_for_status()
+    data = resp.json()
+
+    # L'API può restituire {"solutions": [...]} oppure direttamente una lista
+    if isinstance(data, dict):
+        soluzioni = data.get("solutions", data.get("trainSolutions", []))
+    else:
+        soluzioni = data
+
+    print(f"   Soluzioni totali ricevute: {len(soluzioni)}")
+    return soluzioni
 
 
 # ─── Parsing e filtro ──────────────────────────────────────────────────────────
@@ -98,42 +97,74 @@ def parse_soluzioni(soluzioni_raw):
     risultati = []
 
     for sol in soluzioni_raw:
-        dep_ts = sol.get("departuretime", 0)
-        arr_ts = sol.get("arrivaltime", 0)
-        dep_dt = datetime.fromtimestamp(dep_ts / 1000) if dep_ts else None
-        arr_dt = datetime.fromtimestamp(arr_ts / 1000) if arr_ts else None
+        # Il BFF usa "departureTime" / "arrivalTime" come stringhe ISO
+        dep_str = sol.get("departureTime") or sol.get("departuretime", "")
+        arr_str = sol.get("arrivalTime")   or sol.get("arrivaltime", "")
 
-        if dep_dt is None:
+        # Gestisce sia timestamp in ms (int) che stringa ISO
+        try:
+            if isinstance(dep_str, int):
+                dep_dt = datetime.fromtimestamp(dep_str / 1000)
+            else:
+                dep_dt = datetime.fromisoformat(dep_str[:19])
+        except Exception:
             continue
+
+        try:
+            if isinstance(arr_str, int):
+                arr_dt = datetime.fromtimestamp(arr_str / 1000)
+            else:
+                arr_dt = datetime.fromisoformat(arr_str[:19])
+        except Exception:
+            arr_dt = None
 
         ora_partenza = dep_dt.hour + dep_dt.minute / 60
         if not (ORA_DA <= ora_partenza < ORA_A):
             continue
 
+        # Nomi treni: BFF usa "legs" con "trainCategory" + "trainNumber"
+        legs = sol.get("legs", [])
         treni = sol.get("trainlist", [])
-        nomi_treni = " | ".join(t.get("trainidentifier", "") for t in treni)
 
-        if SOLO_FRECCIAROSSA:
-            is_fr = any(
-                "FRECCIAROSSA" in t.get("trainidentifier", "").upper()
-                for t in treni
+        if legs:
+            nomi_treni = " | ".join(
+                f"{l.get('trainCategory','')} {l.get('trainNumber','')}".strip()
+                for l in legs
             )
-            if not is_fr:
-                continue
+            is_fr = any("FRECCIAROSSA" in l.get("trainCategory", "").upper() for l in legs)
+        elif treni:
+            nomi_treni = " | ".join(t.get("trainidentifier", "") for t in treni)
+            is_fr = any("FRECCIAROSSA" in t.get("trainidentifier", "").upper() for t in treni)
+        else:
+            nomi_treni = sol.get("name", "—")
+            is_fr = "FRECCIAROSSA" in nomi_treni.upper()
 
-        # saleable + bookable + prezzo > 0 → acquistabile
-        min_price    = sol.get("minprice", 0)
-        saleable     = sol.get("saleable", False)
-        bookable     = sol.get("bookable", False)
-        acquistabile = bool(saleable) and bool(bookable) and (min_price > 0)
+        if SOLO_FRECCIAROSSA and not is_fr:
+            continue
+
+        # Prezzo e acquistabilità
+        min_price_obj = sol.get("minPrice", {})
+        if isinstance(min_price_obj, dict):
+            min_price = min_price_obj.get("amount", 0) or 0
+        else:
+            min_price = sol.get("minprice", 0) or 0
+
+        saleable     = sol.get("saleable", sol.get("bookable", False))
+        acquistabile = bool(saleable) and float(min_price) > 0
+
+        # Durata
+        durata = sol.get("duration", sol.get("travelTime", "—"))
+
+        # Cambi
+        cambi = sol.get("changesno", len(legs) - 1 if len(legs) > 1 else 0)
 
         risultati.append({
             "treno":        nomi_treni,
             "partenza":     dep_dt.strftime("%d/%m/%Y %H:%M"),
             "arrivo":       arr_dt.strftime("%H:%M") if arr_dt else "—",
-            "durata":       sol.get("duration", "—"),
-            "prezzo":       f"{min_price:.2f} €" if min_price else "N/D",
-            "cambi":        sol.get("changesno", 0),
+            "durata":       str(durata),
+            "prezzo":       f"{float(min_price):.2f} €" if min_price else "N/D",
+            "cambi":        cambi,
             "acquistabile": acquistabile,
         })
 
@@ -307,8 +338,7 @@ def main():
     print(f"🔍 Cerco Frecciarossa {DATA_VIAGGIO}")
     print(f"   {ORIGINE} → {DESTINAZIONE} | fascia {ORA_DA}:00–{ORA_A}:00\n")
 
-    session = crea_sessione()
-    soluzioni_raw = cerca_treni(session)
+    soluzioni_raw = cerca_treni()
 
     with open("last_response.json", "w", encoding="utf-8") as f:
         json.dump(soluzioni_raw, f, ensure_ascii=False, indent=2)
