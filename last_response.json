@@ -1,61 +1,13 @@
 [
   {
     "_type": "TICKET",
-    "id": "xefe91536-ecc1-412f-836a-636c46a052fa",
+    "id": "x6d901715-fed6-4369-8cfe-e9bee8023f09",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:34:00.000+02:00",
-    "arrivalTime": "2026-07-30T16:20:00.000+02:00",
-    "duration": "6h 46min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "584",
-        "trainCategory": "Intercity",
-        "acronym": "IC",
-        "denomination": "Intercity",
-        "name": "584",
-        "logoId": "IC",
-        "urban": false
-      }
-    ],
-    "price": null,
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "x597ee0c0-b885-448a-8b0c-1a7dc883bed9",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S03317",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T09:34:00.000+02:00",
-        "arrivalTime": "2026-07-30T16:20:00.000+02:00",
-        "salable": false,
-        "train": {
-          "description": "584",
-          "trainCategory": "Intercity",
-          "acronym": "IC",
-          "denomination": "Intercity",
-          "name": "584",
-          "logoId": "IC",
-          "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
-      }
-    ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null
-  },
-  {
-    "_type": "TICKET",
-    "id": "xf3e560ea-c9a8-41ba-b96f-b0f60abf7d76",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T13:30:00.000+02:00",
+    "departureTime": "2026-06-30T09:38:00.000+02:00",
+    "arrivalTime": "2026-06-30T13:30:00.000+02:00",
     "duration": "3h 52min",
-    "status": "INHIBITED",
+    "status": "SALEABLE",
     "trains": [
       {
         "description": "9411",
@@ -67,16 +19,23 @@
         "urban": false
       }
     ],
-    "price": null,
+    "price": {
+      "currency": "€",
+      "amount": 60.9,
+      "amountCrypto": "HC/mvYDa2J+nfaBfYuodtA==",
+      "originalAmount": null,
+      "indicative": false,
+      "hideAmount": false
+    },
     "discounts": [],
     "nodes": [
       {
-        "id": "xc919f7f7-94a3-4118-8c30-e379f7de3de7",
+        "id": "xbbfe60db-30ee-4072-829f-67b936dea6f6",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T09:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T13:30:00.000+02:00",
+        "departureTime": "2026-06-30T09:38:00.000+02:00",
+        "arrivalTime": "2026-06-30T13:30:00.000+02:00",
         "salable": false,
         "train": {
           "description": "9411",
@@ -97,13 +56,13 @@
   },
   {
     "_type": "TICKET",
-    "id": "x9e41e76c-a7d6-40ce-8a3f-39bb1bf72e82",
+    "id": "x69ba9ef6-90e0-4e19-8b87-2a14f87f5462",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T14:10:00.000+02:00",
+    "departureTime": "2026-06-30T09:53:00.000+02:00",
+    "arrivalTime": "2026-06-30T14:10:00.000+02:00",
     "duration": "4h 17min",
-    "status": "INHIBITED",
+    "status": "SALEABLE",
     "trains": [
       {
         "description": "3997",
@@ -126,8 +85,8 @@
     ],
     "price": {
       "currency": "€",
-      "amount": 14.65,
-      "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+      "amount": 66.55,
+      "amountCrypto": "gueAWIKPlvvTvGbwvbmDaA==",
       "originalAmount": null,
       "indicative": false,
       "hideAmount": false
@@ -135,12 +94,12 @@
     "discounts": [],
     "nodes": [
       {
-        "id": "x74c8250c-a88c-4e77-bcda-711a4615d696",
+        "id": "x0dcb6bf0-b4f4-4aa5-a8a4-d9157436e62b",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T09:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T11:45:00.000+02:00",
+        "departureTime": "2026-06-30T09:53:00.000+02:00",
+        "arrivalTime": "2026-06-30T11:45:00.000+02:00",
         "salable": false,
         "train": {
           "description": "3997",
@@ -155,12 +114,12 @@
         "blueJet": false
       },
       {
-        "id": "x9e6580fd-c014-449c-b187-45b3b71e48b1",
+        "id": "x7f3e6124-047d-42c8-b832-df05436b5b07",
         "origin": "Bologna Centrale",
         "bdoOrigin": "S01700",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T12:07:00.000+02:00",
-        "arrivalTime": "2026-07-30T14:10:00.000+02:00",
+        "departureTime": "2026-06-30T12:07:00.000+02:00",
+        "arrivalTime": "2026-06-30T14:10:00.000+02:00",
         "salable": false,
         "train": {
           "description": "9623",
@@ -181,126 +140,13 @@
   },
   {
     "_type": "TICKET",
-    "id": "x59fd2372-0a47-4662-ba4e-7c4e914efefb",
+    "id": "x524e1157-c51c-442f-8fea-0dcb244034c3",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T20:30:00.000+02:00",
-    "duration": "10h 37min",
-    "status": "SALEABLE",
-    "trains": [
-      {
-        "description": "3997",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Fast Regional",
-        "name": "3997",
-        "logoId": "RV",
-        "urban": false
-      },
-      {
-        "description": "3917",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Regionale Veloce TTPER",
-        "name": "3917",
-        "logoId": "TTPER",
-        "urban": false
-      },
-      {
-        "description": "541",
-        "trainCategory": "Intercity",
-        "acronym": "IC",
-        "denomination": "Intercity",
-        "name": "541",
-        "logoId": "IC",
-        "urban": false
-      }
-    ],
-    "price": {
-      "currency": "€",
-      "amount": 41.8,
-      "amountCrypto": "80Wsk5diTh1vGWNMQsPEdw==",
-      "originalAmount": null,
-      "indicative": false,
-      "hideAmount": false
-    },
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "x2d4c6368-2f11-42d9-8432-4f3eba6d9e15",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T09:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T11:45:00.000+02:00",
-        "salable": false,
-        "train": {
-          "description": "3997",
-          "trainCategory": "Regionale Veloce",
-          "acronym": "RV",
-          "denomination": "Fast Regional",
-          "name": "3997",
-          "logoId": "RV",
-          "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "xdd34416b-a2ce-45b2-a6aa-3c1ca7286f54",
-        "origin": "Bologna Centrale",
-        "bdoOrigin": "S05000",
-        "destination": "Ancona",
-        "departureTime": "2026-07-30T12:34:00.000+02:00",
-        "arrivalTime": "2026-07-30T15:16:00.000+02:00",
-        "salable": false,
-        "train": {
-          "description": "3917",
-          "trainCategory": "Regionale Veloce",
-          "acronym": "RV",
-          "denomination": "Regionale Veloce TTPER",
-          "name": "3917",
-          "logoId": "TTPER",
-          "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "x47ffc168-0fad-45bb-9c06-e25f979ee698",
-        "origin": "Ancona",
-        "bdoOrigin": "S07513",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T15:55:00.000+02:00",
-        "arrivalTime": "2026-07-30T20:30:00.000+02:00",
-        "salable": false,
-        "train": {
-          "description": "541",
-          "trainCategory": "Intercity",
-          "acronym": "IC",
-          "denomination": "Intercity",
-          "name": "541",
-          "logoId": "IC",
-          "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
-      }
-    ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null
-  },
-  {
-    "_type": "TICKET",
-    "id": "xf428950f-b35f-4a5c-b4b4-611d6c8f7caa",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T10:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T14:25:00.000+02:00",
+    "departureTime": "2026-06-30T10:38:00.000+02:00",
+    "arrivalTime": "2026-06-30T14:25:00.000+02:00",
     "duration": "3h 47min",
-    "status": "INHIBITED",
+    "status": "SALEABLE",
     "trains": [
       {
         "description": "9413",
@@ -312,16 +158,23 @@
         "urban": false
       }
     ],
-    "price": null,
+    "price": {
+      "currency": "€",
+      "amount": 65.9,
+      "amountCrypto": "buuqX4j3feWHGsrxdd2u0Q==",
+      "originalAmount": null,
+      "indicative": false,
+      "hideAmount": false
+    },
     "discounts": [],
     "nodes": [
       {
-        "id": "x788d9f97-7dd7-487f-8c11-aab2c620bda2",
+        "id": "x90dc2505-52ee-4908-a209-471983db21f3",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T10:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T14:25:00.000+02:00",
+        "departureTime": "2026-06-30T10:38:00.000+02:00",
+        "arrivalTime": "2026-06-30T14:25:00.000+02:00",
         "salable": false,
         "train": {
           "description": "9413",
@@ -342,13 +195,13 @@
   },
   {
     "_type": "TICKET",
-    "id": "xaff285ee-22fc-4dfb-aa97-85fd039c3525",
+    "id": "xd1360988-9d1a-44d2-8f89-539ac434e0b4",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T10:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T15:10:00.000+02:00",
+    "departureTime": "2026-06-30T10:53:00.000+02:00",
+    "arrivalTime": "2026-06-30T15:10:00.000+02:00",
     "duration": "4h 17min",
-    "status": "INHIBITED",
+    "status": "SALEABLE",
     "trains": [
       {
         "description": "3971",
@@ -371,8 +224,8 @@
     ],
     "price": {
       "currency": "€",
-      "amount": 14.65,
-      "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+      "amount": 49.55,
+      "amountCrypto": "p1a8jKEDAeZfFK3fUmRYYA==",
       "originalAmount": null,
       "indicative": false,
       "hideAmount": false
@@ -380,12 +233,12 @@
     "discounts": [],
     "nodes": [
       {
-        "id": "x5052def2-2461-4fd8-b450-fbad57e36543",
+        "id": "x67bdebb8-4dbc-4d73-8a62-5c0f0029104c",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T10:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T12:45:00.000+02:00",
+        "departureTime": "2026-06-30T10:53:00.000+02:00",
+        "arrivalTime": "2026-06-30T12:45:00.000+02:00",
         "salable": false,
         "train": {
           "description": "3971",
@@ -400,12 +253,12 @@
         "blueJet": false
       },
       {
-        "id": "x884dcbf4-1e3d-41fd-ae77-b06878577c7f",
+        "id": "xa9e7b381-2450-43e8-96a5-56fe0b1a20ca",
         "origin": "Bologna Centrale",
         "bdoOrigin": "S01700",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T13:07:00.000+02:00",
-        "arrivalTime": "2026-07-30T15:10:00.000+02:00",
+        "departureTime": "2026-06-30T13:07:00.000+02:00",
+        "arrivalTime": "2026-06-30T15:10:00.000+02:00",
         "salable": false,
         "train": {
           "description": "9627",
@@ -426,13 +279,68 @@
   },
   {
     "_type": "TICKET",
-    "id": "x150be211-c043-4a31-bd7c-a84826981eba",
+    "id": "x0d4e36b5-00ed-4f5d-881c-a24815c1593a",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T11:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T15:30:00.000+02:00",
+    "departureTime": "2026-06-30T11:04:00.000+02:00",
+    "arrivalTime": "2026-06-30T20:01:00.000+02:00",
+    "duration": "8h 57min",
+    "status": "SALEABLE",
+    "trains": [
+      {
+        "description": "584",
+        "trainCategory": "Intercity",
+        "acronym": "IC",
+        "denomination": "Intercity",
+        "name": "584",
+        "logoId": "IC",
+        "urban": false
+      }
+    ],
+    "price": {
+      "currency": "€",
+      "amount": 19.9,
+      "amountCrypto": "VNUepDTnd82Ihj0kibqjGg==",
+      "originalAmount": null,
+      "indicative": false,
+      "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+      {
+        "id": "x2e635331-5520-44ff-bdba-b9343ec69961",
+        "origin": "Venezia Mestre",
+        "bdoOrigin": "S03317",
+        "destination": "Roma Termini",
+        "departureTime": "2026-06-30T11:04:00.000+02:00",
+        "arrivalTime": "2026-06-30T20:01:00.000+02:00",
+        "salable": false,
+        "train": {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        },
+        "bluJetMessage": null,
+        "blueJet": false
+      }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+  },
+  {
+    "_type": "TICKET",
+    "id": "xfcd706dd-4f9e-45bf-840d-e0ba3729ae65",
+    "origin": "Venezia Mestre",
+    "destination": "Roma Termini",
+    "departureTime": "2026-06-30T11:38:00.000+02:00",
+    "arrivalTime": "2026-06-30T15:30:00.000+02:00",
     "duration": "3h 52min",
-    "status": "INHIBITED",
+    "status": "SALEABLE",
     "trains": [
       {
         "description": "9415",
@@ -444,16 +352,23 @@
         "urban": false
       }
     ],
-    "price": null,
+    "price": {
+      "currency": "€",
+      "amount": 51.9,
+      "amountCrypto": "fTBLAYi0HBqIM/aeOotIjQ==",
+      "originalAmount": null,
+      "indicative": false,
+      "hideAmount": false
+    },
     "discounts": [],
     "nodes": [
       {
-        "id": "x8c7a2f92-6c86-42a0-85e9-691ba7620dc9",
+        "id": "xd052237b-cc27-41c2-99c0-39b27f1a83e6",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T11:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T15:30:00.000+02:00",
+        "departureTime": "2026-06-30T11:38:00.000+02:00",
+        "arrivalTime": "2026-06-30T15:30:00.000+02:00",
         "salable": false,
         "train": {
           "description": "9415",
@@ -474,13 +389,13 @@
   },
   {
     "_type": "TICKET",
-    "id": "x21d1a34d-b7e2-4da0-af1f-aec772c75eff",
+    "id": "x8ac38759-34e6-42fe-8581-62e10a903fa6",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T11:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T16:15:00.000+02:00",
+    "departureTime": "2026-06-30T11:53:00.000+02:00",
+    "arrivalTime": "2026-06-30T16:15:00.000+02:00",
     "duration": "4h 22min",
-    "status": "INHIBITED",
+    "status": "SALEABLE",
     "trains": [
       {
         "description": "3973",
@@ -503,8 +418,8 @@
     ],
     "price": {
       "currency": "€",
-      "amount": 14.65,
-      "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+      "amount": 49.55,
+      "amountCrypto": "p1a8jKEDAeZfFK3fUmRYYA==",
       "originalAmount": null,
       "indicative": false,
       "hideAmount": false
@@ -512,12 +427,12 @@
     "discounts": [],
     "nodes": [
       {
-        "id": "xcfeadd9b-bb3d-4a8a-8e2d-b4b236b522d0",
+        "id": "x85de56d3-8a26-41f8-b71c-ec9fa559bbce",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T11:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T13:45:00.000+02:00",
+        "departureTime": "2026-06-30T11:53:00.000+02:00",
+        "arrivalTime": "2026-06-30T13:45:00.000+02:00",
         "salable": false,
         "train": {
           "description": "3973",
@@ -532,12 +447,12 @@
         "blueJet": false
       },
       {
-        "id": "x68cb6caf-5712-4daf-b052-6c9669816068",
+        "id": "x130b3f5e-b3cb-4937-b37a-c15ae7830c41",
         "origin": "Bologna Centrale",
         "bdoOrigin": "S01700",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T14:07:00.000+02:00",
-        "arrivalTime": "2026-07-30T16:15:00.000+02:00",
+        "departureTime": "2026-06-30T14:07:00.000+02:00",
+        "arrivalTime": "2026-06-30T16:15:00.000+02:00",
         "salable": false,
         "train": {
           "description": "9631",
@@ -558,11 +473,11 @@
   },
   {
     "_type": "TICKET",
-    "id": "xa93f47c1-8edb-4ef5-9894-0ceb9d64f0c5",
+    "id": "xd6974a36-4f7c-4f38-966b-32f1456fe693",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T11:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T22:35:00.000+02:00",
+    "departureTime": "2026-06-30T11:53:00.000+02:00",
+    "arrivalTime": "2026-06-30T22:35:00.000+02:00",
     "duration": "10h 42min",
     "status": "SALEABLE",
     "trains": [
@@ -605,12 +520,12 @@
     "discounts": [],
     "nodes": [
       {
-        "id": "x88c9c7df-a415-484e-9f24-2a09d1c9fd4e",
+        "id": "x0d6f24af-a77e-4008-95e0-dc3a740d2397",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T11:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T13:45:00.000+02:00",
+        "departureTime": "2026-06-30T11:53:00.000+02:00",
+        "arrivalTime": "2026-06-30T13:45:00.000+02:00",
         "salable": false,
         "train": {
           "description": "3973",
@@ -625,12 +540,12 @@
         "blueJet": false
       },
       {
-        "id": "xce452915-54ff-421b-966f-f7f6c07ac054",
+        "id": "xe467dc41-9aab-4784-8a92-61093cd2d374",
         "origin": "Bologna Centrale",
         "bdoOrigin": "S05000",
         "destination": "Falconara Marittima",
-        "departureTime": "2026-07-30T14:34:00.000+02:00",
-        "arrivalTime": "2026-07-30T17:03:00.000+02:00",
+        "departureTime": "2026-06-30T14:34:00.000+02:00",
+        "arrivalTime": "2026-06-30T17:03:00.000+02:00",
         "salable": false,
         "train": {
           "description": "3925",
@@ -645,12 +560,12 @@
         "blueJet": false
       },
       {
-        "id": "x64d30155-1ec1-498a-8c07-19477235f4bd",
+        "id": "xcc4ad5d2-26e9-4b99-ab40-4d50a95e50af",
         "origin": "Falconara Marittima",
         "bdoOrigin": "S07113",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T19:00:00.000+02:00",
-        "arrivalTime": "2026-07-30T22:35:00.000+02:00",
+        "departureTime": "2026-06-30T19:00:00.000+02:00",
+        "arrivalTime": "2026-06-30T22:35:00.000+02:00",
         "salable": false,
         "train": {
           "description": "4157",
@@ -671,13 +586,13 @@
   },
   {
     "_type": "TICKET",
-    "id": "xb57c1e59-24d0-42bb-8754-4fc1fc35f556",
+    "id": "x9389d69f-4a26-4b1e-a154-11ae8bc8f1e0",
     "origin": "Venezia Mestre",
     "destination": "Roma Termini",
-    "departureTime": "2026-07-30T12:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T16:24:00.000+02:00",
+    "departureTime": "2026-06-30T12:38:00.000+02:00",
+    "arrivalTime": "2026-06-30T16:24:00.000+02:00",
     "duration": "3h 46min",
-    "status": "INHIBITED",
+    "status": "SALEABLE",
     "trains": [
       {
         "description": "8419",
@@ -689,16 +604,23 @@
         "urban": false
       }
     ],
-    "price": null,
+    "price": {
+      "currency": "€",
+      "amount": 36.9,
+      "amountCrypto": "F4qynkL2acNxngVT2xVT8A==",
+      "originalAmount": null,
+      "indicative": false,
+      "hideAmount": false
+    },
     "discounts": [],
     "nodes": [
       {
-        "id": "xfe02b361-98c0-4a85-be0e-fd607f4ec5f7",
+        "id": "x6480591c-8514-4b04-a191-2b7cb23ae1da",
         "origin": "Venezia Mestre",
         "bdoOrigin": "S02593",
         "destination": "Roma Termini",
-        "departureTime": "2026-07-30T12:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T16:24:00.000+02:00",
+        "departureTime": "2026-06-30T12:38:00.000+02:00",
+        "arrivalTime": "2026-06-30T16:24:00.000+02:00",
         "salable": false,
         "train": {
           "description": "8419",
@@ -706,6 +628,90 @@
           "acronym": "FR",
           "denomination": "FRECCIAROSSA",
           "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        },
+        "bluJetMessage": null,
+        "blueJet": false
+      }
+    ],
+    "additionalPrice": null,
+    "description": null,
+    "validities": null
+  },
+  {
+    "_type": "TICKET",
+    "id": "xd0abf022-acca-4183-9f00-f2dc43458d9a",
+    "origin": "Venezia Mestre",
+    "destination": "Roma Termini",
+    "departureTime": "2026-06-30T12:53:00.000+02:00",
+    "arrivalTime": "2026-06-30T17:10:00.000+02:00",
+    "duration": "4h 17min",
+    "status": "SALEABLE",
+    "trains": [
+      {
+        "description": "3975",
+        "trainCategory": "Regionale Veloce",
+        "acronym": "RV",
+        "denomination": "Fast Regional",
+        "name": "3975",
+        "logoId": "RV",
+        "urban": false
+      },
+      {
+        "description": "9637",
+        "trainCategory": "Frecciarossa",
+        "acronym": "FR",
+        "denomination": "FRECCIAROSSA",
+        "name": "9637",
+        "logoId": "FR",
+        "urban": false
+      }
+    ],
+    "price": {
+      "currency": "€",
+      "amount": 39.55,
+      "amountCrypto": "TBRuAvjsUjc9l+m3ZnhcSw==",
+      "originalAmount": null,
+      "indicative": false,
+      "hideAmount": false
+    },
+    "discounts": [],
+    "nodes": [
+      {
+        "id": "x833f2df5-4156-4f57-98e9-2ff6fadeb1a5",
+        "origin": "Venezia Mestre",
+        "bdoOrigin": "S02593",
+        "destination": "Bologna Centrale",
+        "departureTime": "2026-06-30T12:53:00.000+02:00",
+        "arrivalTime": "2026-06-30T14:45:00.000+02:00",
+        "salable": false,
+        "train": {
+          "description": "3975",
+          "trainCategory": "Regionale Veloce",
+          "acronym": "RV",
+          "denomination": "Fast Regional",
+          "name": "3975",
+          "logoId": "RV",
+          "urban": false
+        },
+        "bluJetMessage": null,
+        "blueJet": false
+      },
+      {
+        "id": "x3f2c03dd-7790-4a67-8e9d-fa796b656285",
+        "origin": "Bologna Centrale",
+        "bdoOrigin": "S01700",
+        "destination": "Roma Termini",
+        "departureTime": "2026-06-30T15:07:00.000+02:00",
+        "arrivalTime": "2026-06-30T17:10:00.000+02:00",
+        "salable": false,
+        "train": {
+          "description": "9637",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9637",
           "logoId": "FR",
           "urban": false
         },
