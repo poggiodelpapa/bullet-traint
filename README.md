@@ -1,9 +1,7 @@
 <div align="center">
-
-![Bullet Train't](header.svg)
-
+  <img src="logo.png" alt="Bullet Train't" width="25%">
 </div>
-
+<br>
 A lightweight GitHub Actions bot that monitors Trenitalia's availability for a specific route and sends a branded email notification the moment a ticket becomes purchasable.
  
 Built because apparently getting from Venice to Rome by Frecciarossa is harder than it sounds.
