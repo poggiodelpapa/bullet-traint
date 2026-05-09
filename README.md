@@ -1,7 +1,6 @@
 <div align="center">
 
-# 🚄
-# Bullet Train't
+![Bullet Train't](header.svg)
 
 </div>
 
