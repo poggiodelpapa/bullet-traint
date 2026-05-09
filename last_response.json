@@ -1,36 +1,16 @@
 [
   {
-    "_type": "TICKET",
-    "id": "xffa4bace-7e94-48e3-8eb3-eec585bd03fd",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:34:00.000+02:00",
-    "arrivalTime": "2026-07-30T16:20:00.000+02:00",
-    "duration": "6h 46min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "584",
-        "trainCategory": "Intercity",
-        "acronym": "IC",
-        "denomination": "Intercity",
-        "name": "584",
-        "logoId": "IC",
-        "urban": false
-      }
-    ],
-    "price": null,
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "xb0808301-cda3-4fab-b4d5-635dfccc51c6",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S03317",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T09:34:00.000+02:00",
-        "arrivalTime": "2026-07-30T16:20:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "xd3d9e4e4-4efd-4323-b690-ce532c5dcb29",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T09:34:00.000+02:00",
+      "arrivalTime": "2026-07-30T16:20:00.000+02:00",
+      "duration": "6h 46min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "584",
           "trainCategory": "Intercity",
           "acronym": "IC",
@@ -38,15 +18,107 @@
           "name": "584",
           "logoId": "IC",
           "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xd1bea8f2-1fdd-4b54-a8db-786ffdb75d2a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T09:34:00.000+02:00",
+          "arrivalTime": "2026-07-30T16:20:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "xd1bea8f2-1fdd-4b54-a8db-786ffdb75d2a",
+        "summaries": [
+          {
+            "name": "Intercity 584",
+            "description": "Venezia Mestre (09:34) - Roma Termini (16:20)",
+            "duration": "6h 46min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T09:34:00.000+02:00",
+            "arrivalTime": "2026-07-30T16:20:00.000+02:00",
+            "trainInfo": {
+              "description": "584",
+              "trainCategory": "Intercity",
+              "acronym": "IC",
+              "denomination": "Intercity",
+              "name": "584",
+              "logoId": "IC",
+              "urban": false
+            },
+            "bdoOrigin": "S03317",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 170,
+            "name": "2ª CLASSE EASY",
+            "shortName": "2ª CLASSE EASY",
+            "groupName": "2ND CLASS",
+            "description": "Spacious seating (seat width: 51 cm; space between seats: 95 cm), ample luggage space, folding tables for each seat, electrical sockets, courtesy light, coat hooks, on-board cleaning personnel present during the entire journey.",
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "IC.170",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 158,
+            "name": "1ª CLASSE PLUS",
+            "shortName": "1ª CLASSE PLUS",
+            "groupName": "1ST CLASS",
+            "description": "Spacious seating (seat width: 63 cm; space between seats: 103 cm), ample luggage space, folding tables for each seat, electrical sockets, courtesy light, coat hooks, on-board cleaning personnel present during the entire journey.",
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "IC.158",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": "family",
         "message": "Family area available in coach 3 on InterCity 584",
@@ -58,40 +130,52 @@
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -30.80 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 25.31
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 56.11
+        },
+        {
+          "type": "PLANE",
+          "kgEmissions": 104.57
+        }
+      ]
+    }
   },
   {
-    "_type": "TICKET",
-    "id": "x9a91281f-5f9c-403a-8e43-a51b8a116299",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T13:30:00.000+02:00",
-    "duration": "3h 52min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "9411",
-        "trainCategory": "Frecciarossa",
-        "acronym": "FR",
-        "denomination": "FRECCIAROSSA",
-        "name": "9411",
-        "logoId": "FR",
-        "urban": false
-      }
-    ],
-    "price": null,
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "xdf3d5c0c-6d35-4f24-a521-3615b9b961e9",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T09:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T13:30:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x2f78a3bb-a796-45da-a4b8-b10aa789266f",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T09:38:00.000+02:00",
+      "arrivalTime": "2026-07-30T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "9411",
           "trainCategory": "Frecciarossa",
           "acronym": "FR",
@@ -99,71 +183,204 @@
           "name": "9411",
           "logoId": "FR",
           "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x6aac8f28-0281-4ef7-b264-60b066f380e6",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T09:38:00.000+02:00",
+          "arrivalTime": "2026-07-30T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9411",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "x6aac8f28-0281-4ef7-b264-60b066f380e6",
+        "summaries": [
+          {
+            "name": "Frecciarossa 9411",
+            "description": "Venezia Mestre (09:38) - Roma Termini (13:30)",
+            "duration": "3h 52min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T09:38:00.000+02:00",
+            "arrivalTime": "2026-07-30T13:30:00.000+02:00",
+            "trainInfo": {
+              "description": "9411",
+              "trainCategory": "Frecciarossa",
+              "acronym": "FR",
+              "denomination": "FRECCIAROSSA",
+              "name": "9411",
+              "logoId": "FR",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 30005,
+            "name": "STANDARD",
+            "shortName": "STANDARD",
+            "groupName": "STANDARD",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30005",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30004,
+            "name": "PREMIUM",
+            "shortName": "PREMIUM",
+            "groupName": "PREMIUM",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30004",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30002,
+            "name": "BUSINESS",
+            "shortName": "BUSINESS",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30002",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30003,
+            "name": "BUSINESS AREA SILENZIO",
+            "shortName": "AREA SILENZIO",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30003",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30000,
+            "name": "EXECUTIVE",
+            "shortName": "EXECUTIVE",
+            "groupName": "EXECUTIVE",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30000",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": null,
         "message": "Travel solution temporarily not available for the selected date",
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -32.86 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 23.25
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 56.11
+        },
+        {
+          "type": "PLANE",
+          "kgEmissions": 104.57
+        }
+      ]
+    }
   },
   {
-    "_type": "TICKET",
-    "id": "x1e12cf5a-bb23-4b76-bb2f-69f0c26d2149",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T14:10:00.000+02:00",
-    "duration": "4h 17min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "3997",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Fast Regional",
-        "name": "3997",
-        "logoId": "RV",
-        "urban": false
-      },
-      {
-        "description": "9623",
-        "trainCategory": "Frecciarossa",
-        "acronym": "FR",
-        "denomination": "FRECCIAROSSA",
-        "name": "9623",
-        "logoId": "FR",
-        "urban": false
-      }
-    ],
-    "price": {
-      "currency": "€",
-      "amount": 14.65,
-      "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
-      "originalAmount": null,
-      "indicative": false,
-      "hideAmount": false
-    },
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "xf4bc609e-9f1c-4d4f-aab8-2dd6199745db",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T09:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T11:45:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x0b5a3844-35a0-4681-b658-60359a3a174e",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T09:53:00.000+02:00",
+      "arrivalTime": "2026-07-30T14:10:00.000+02:00",
+      "duration": "4h 17min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "3997",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -172,18 +389,7 @@
           "logoId": "RV",
           "urban": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "x9212d5cd-3bd9-4e7b-9a0a-1a106e5f3226",
-        "origin": "Bologna Centrale",
-        "bdoOrigin": "S01700",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T12:07:00.000+02:00",
-        "arrivalTime": "2026-07-30T14:10:00.000+02:00",
-        "salable": false,
-        "train": {
+        {
           "description": "9623",
           "trainCategory": "Frecciarossa",
           "acronym": "FR",
@@ -191,80 +397,350 @@
           "name": "9623",
           "logoId": "FR",
           "urban": false
+        }
+      ],
+      "price": {
+        "currency": "€",
+        "amount": 14.65,
+        "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+        "originalAmount": null,
+        "indicative": false,
+        "hideAmount": false
+      },
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x139e3e39-3eb7-4c97-a2e7-0d552ebf4876",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2026-07-30T09:53:00.000+02:00",
+          "arrivalTime": "2026-07-30T11:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3997",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3997",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
+        {
+          "id": "x70e7edcd-2033-4e0a-b9a0-78bde2754c13",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S01700",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T12:07:00.000+02:00",
+          "arrivalTime": "2026-07-30T14:10:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9623",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9623",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "x139e3e39-3eb7-4c97-a2e7-0d552ebf4876",
+        "summaries": [
+          {
+            "name": "Regionale Veloce 3997",
+            "description": "Venezia Mestre (09:53) - Bologna Centrale (11:45)",
+            "duration": "1h 52min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Bologna Centrale",
+            "departureTime": "2026-07-30T09:53:00.000+02:00",
+            "arrivalTime": "2026-07-30T11:45:00.000+02:00",
+            "trainInfo": {
+              "description": "3997",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Fast Regional",
+              "name": "3997",
+              "logoId": "RV",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": 69,
+        "selectedServiceId": 286,
+        "services": [
+          {
+            "id": 286,
+            "name": "2ª CLASSE PRENOTAZIONE",
+            "shortName": "2ª CLASSE PRENOTAZIONE",
+            "groupName": "2ND CLASS",
+            "description": null,
+            "descriptionStandard": "Servizio regionale 2 Classe a prenotazione",
+            "offers": [
+              {
+                "offerId": 69,
+                "serviceId": 286,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE PRENOTAZIONE",
+                "name": "ORDINARIA",
+                "description": "Your ticket will be validated automatically on the scheduled departure of your train. Have you changed your mind? No problem! By 11.59 p.m. on the day before your trip, you can change the date and time, and on the day of travel you can change the departure time before the ticket is automatically validated. Once the ticket is validated, it can no longer be modified.",
+                "price": {
+                  "currency": "€",
+                  "amount": 14.65,
+                  "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 32767,
+                "canModify": null,
+                "canChange": null,
+                "canRefund": null,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": false,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "xe3730998-ec2f-450c-aa98-a4793bdd06c7"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": true,
+                "selecteable": true
+              }
+            ],
+            "minPrice": {
+              "currency": "€",
+              "amount": 14.65,
+              "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+              "originalAmount": null,
+              "indicative": false,
+              "hideAmount": false
+            },
+            "bestOfferId": 69,
+            "extendedName": null,
+            "descriptionKey": "286",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": true
+      },
+      {
+        "id": "x70e7edcd-2033-4e0a-b9a0-78bde2754c13",
+        "summaries": [
+          {
+            "name": "Frecciarossa 9623",
+            "description": "Bologna Centrale (12:07) - Roma Termini (14:10)",
+            "duration": "2h 03min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Bologna Centrale",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T12:07:00.000+02:00",
+            "arrivalTime": "2026-07-30T14:10:00.000+02:00",
+            "trainInfo": {
+              "description": "9623",
+              "trainCategory": "Frecciarossa",
+              "acronym": "FR",
+              "denomination": "FRECCIAROSSA",
+              "name": "9623",
+              "logoId": "FR",
+              "urban": false
+            },
+            "bdoOrigin": "S01700",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 30005,
+            "name": "STANDARD",
+            "shortName": "STANDARD",
+            "groupName": "STANDARD",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30005",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30004,
+            "name": "PREMIUM",
+            "shortName": "PREMIUM",
+            "groupName": "PREMIUM",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30004",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30002,
+            "name": "BUSINESS",
+            "shortName": "BUSINESS",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30002",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30003,
+            "name": "BUSINESS AREA SILENZIO",
+            "shortName": "AREA SILENZIO",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30003",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30000,
+            "name": "EXECUTIVE",
+            "shortName": "EXECUTIVE",
+            "groupName": "EXECUTIVE",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30000",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": null,
         "message": "Travel solution temporarily not available for the selected date",
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [
+        {
+          "denomination": "Fast Regional",
+          "name": "3997",
+          "offer": "Ordinaria",
+          "service": "2ª Classe Prenotazione"
+        }
+      ],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -10.81 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 7.35
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 18.16
+        }
+      ]
+    }
   },
   {
-    "_type": "TICKET",
-    "id": "x94aa0c08-b003-427d-b9ed-cdbaf85a1db6",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T09:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T20:30:00.000+02:00",
-    "duration": "10h 37min",
-    "status": "SALEABLE",
-    "trains": [
-      {
-        "description": "3997",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Fast Regional",
-        "name": "3997",
-        "logoId": "RV",
-        "urban": false
-      },
-      {
-        "description": "3917",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Regionale Veloce TTPER",
-        "name": "3917",
-        "logoId": "TTPER",
-        "urban": false
-      },
-      {
-        "description": "541",
-        "trainCategory": "Intercity",
-        "acronym": "IC",
-        "denomination": "Intercity",
-        "name": "541",
-        "logoId": "IC",
-        "urban": false
-      }
-    ],
-    "price": {
-      "currency": "€",
-      "amount": 41.8,
-      "amountCrypto": "80Wsk5diTh1vGWNMQsPEdw==",
-      "originalAmount": null,
-      "indicative": false,
-      "hideAmount": false
-    },
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "xb35236d0-96cb-44c9-8c0f-a55b0b61d925",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T09:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T11:45:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "xadfb87e0-39cb-435b-8682-ec034ad7a4e6",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T09:53:00.000+02:00",
+      "arrivalTime": "2026-07-30T20:30:00.000+02:00",
+      "duration": "10h 37min",
+      "status": "SALEABLE",
+      "trains": [
+        {
           "description": "3997",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -273,18 +749,7 @@
           "logoId": "RV",
           "urban": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "xb07cd94a-14cd-48f0-84af-c0f52f44c031",
-        "origin": "Bologna Centrale",
-        "bdoOrigin": "S05000",
-        "destination": "Ancona",
-        "departureTime": "2026-07-30T12:34:00.000+02:00",
-        "arrivalTime": "2026-07-30T15:16:00.000+02:00",
-        "salable": false,
-        "train": {
+        {
           "description": "3917",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -293,18 +758,7 @@
           "logoId": "TTPER",
           "urban": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "x4cd8d9f9-32b4-4124-a4d7-856a18a4f98c",
-        "origin": "Ancona",
-        "bdoOrigin": "S07513",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T15:55:00.000+02:00",
-        "arrivalTime": "2026-07-30T20:30:00.000+02:00",
-        "salable": false,
-        "train": {
+        {
           "description": "541",
           "trainCategory": "Intercity",
           "acronym": "IC",
@@ -312,55 +766,1041 @@
           "name": "541",
           "logoId": "IC",
           "urban": false
+        }
+      ],
+      "price": {
+        "currency": "€",
+        "amount": 41.8,
+        "amountCrypto": "80Wsk5diTh1vGWNMQsPEdw==",
+        "originalAmount": null,
+        "indicative": false,
+        "hideAmount": false
+      },
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xc2a4bb28-1741-4b24-85b5-6be41d93eba3",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2026-07-30T09:53:00.000+02:00",
+          "arrivalTime": "2026-07-30T11:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3997",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3997",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
+        {
+          "id": "x352cf575-fc5b-41e3-80a6-2651e7dbb747",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S05000",
+          "destination": "Ancona",
+          "departureTime": "2026-07-30T12:34:00.000+02:00",
+          "arrivalTime": "2026-07-30T15:16:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3917",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Regionale Veloce TTPER",
+            "name": "3917",
+            "logoId": "TTPER",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        },
+        {
+          "id": "x2c685186-e15e-40c4-ae92-3af0068b24a2",
+          "origin": "Ancona",
+          "bdoOrigin": "S07513",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T15:55:00.000+02:00",
+          "arrivalTime": "2026-07-30T20:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "541",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "541",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "x467db055-97b6-409b-b678-ff442129610f",
+        "summaries": [
+          {
+            "name": "Regionale Veloce 3997",
+            "description": "Venezia Mestre (09:53) - Bologna Centrale (11:45)",
+            "duration": "1h 52min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Bologna Centrale",
+            "departureTime": "2026-07-30T09:53:00.000+02:00",
+            "arrivalTime": "2026-07-30T11:45:00.000+02:00",
+            "trainInfo": {
+              "description": "3997",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Fast Regional",
+              "name": "3997",
+              "logoId": "RV",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          },
+          {
+            "name": "Regionale Veloce 3917",
+            "description": "Bologna Centrale (12:34) - Ancona (15:16)",
+            "duration": "2h 42min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Bologna Centrale",
+            "arrivalLocationName": "Ancona",
+            "departureTime": "2026-07-30T12:34:00.000+02:00",
+            "arrivalTime": "2026-07-30T15:16:00.000+02:00",
+            "trainInfo": {
+              "description": "3917",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Regionale Veloce TTPER",
+              "name": "3917",
+              "logoId": "TTPER",
+              "urban": false
+            },
+            "bdoOrigin": "S05000",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": 69,
+        "selectedServiceId": 201,
+        "services": [
+          {
+            "id": 201,
+            "name": "2ª CLASSE",
+            "shortName": "2ª CLASSE",
+            "groupName": "2ND CLASS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [
+              {
+                "offerId": 69,
+                "serviceId": 201,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE",
+                "name": "ORDINARIA",
+                "description": "Your ticket will be validated automatically on the scheduled departure of your train. Have you changed your mind? No problem! By 11.59 p.m. on the day before your trip, you can change the date and time, and on the day of travel you can change the departure time before the ticket is automatically validated. Once the ticket is validated, it can no longer be modified.",
+                "price": {
+                  "currency": "€",
+                  "amount": 30.9,
+                  "amountCrypto": "mwZkGY9/KQveUcsPeEoXbA==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 32767,
+                "canModify": null,
+                "canChange": null,
+                "canRefund": null,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "xba3facfa-a736-4fdd-a593-3ad8d47c732e"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": true,
+                "selecteable": true
+              }
+            ],
+            "minPrice": {
+              "currency": "€",
+              "amount": 30.9,
+              "amountCrypto": "mwZkGY9/KQveUcsPeEoXbA==",
+              "originalAmount": null,
+              "indicative": false,
+              "hideAmount": false
+            },
+            "bestOfferId": 69,
+            "extendedName": null,
+            "descriptionKey": "201",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": true
+      },
+      {
+        "id": "x2c685186-e15e-40c4-ae92-3af0068b24a2",
+        "summaries": [
+          {
+            "name": "Intercity 541",
+            "description": "Ancona (15:55) - Roma Termini (20:30)",
+            "duration": "4h 35min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Ancona",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T15:55:00.000+02:00",
+            "arrivalTime": "2026-07-30T20:30:00.000+02:00",
+            "trainInfo": {
+              "description": "541",
+              "trainCategory": "Intercity",
+              "acronym": "IC",
+              "denomination": "Intercity",
+              "name": "541",
+              "logoId": "IC",
+              "urban": false
+            },
+            "bdoOrigin": "S07513",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": 1101,
+        "selectedServiceId": 170,
+        "services": [
+          {
+            "id": 170,
+            "name": "2ª CLASSE EASY",
+            "shortName": "2ª CLASSE EASY",
+            "groupName": "2ND CLASS",
+            "description": "Spacious seating (seat width: 51 cm; space between seats: 95 cm), ample luggage space, folding tables for each seat, electrical sockets, courtesy light, coat hooks, on-board cleaning personnel present during the entire journey.",
+            "descriptionStandard": "",
+            "offers": [
+              {
+                "offerId": 1,
+                "serviceId": 170,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE EASY",
+                "name": "BASE",
+                "description": "This ticket allows unlimited booking changes prior to departure. For Frecce Trains, if the Base price level originally paid is not available, you are required to request a ticket change and pay the resulting price difference. Refund with deduction.",
+                "price": {
+                  "currency": "€",
+                  "amount": 35.5,
+                  "amountCrypto": "sYPrrUW3WacGA39+CvpaxA==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 150,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": true,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "xedb9ec31-9139-4dff-99da-f89a0af24dda"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              },
+              {
+                "offerId": 1100,
+                "serviceId": 170,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE EASY",
+                "name": "Economy",
+                "description": "Reservation change allowed before departure. Refund not allowed. Limited seats",
+                "price": {
+                  "currency": "€",
+                  "amount": 22.9,
+                  "amountCrypto": "9h4fsMGr2wxZCeDJUO4qBw==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 71,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x9bdbb6a3-145e-4cba-b908-ca2c48612142"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              },
+              {
+                "offerId": 1101,
+                "serviceId": 170,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE EASY",
+                "name": "Super Economy",
+                "description": "Reservation change and refund not allowed. Limited seats",
+                "price": {
+                  "currency": "€",
+                  "amount": 10.9,
+                  "amountCrypto": "AVJLGAjycIAagVLLUG/rSw==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 69,
+                "canModify": false,
+                "canChange": false,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x483c6ca1-7d5f-4e73-8e2c-96ec150d01c0"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": true,
+                "selecteable": true
+              },
+              {
+                "offerId": 1814,
+                "serviceId": 170,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE EASY",
+                "name": "YOUNG",
+                "description": "Offer reserved for X-GO cardholders for travel on Intercity and Intercity notte and CartaFRECCIA cardholders for travel on Frecciabianca. The traveller must be under 30 years of age and be the cardholder. Changes may only be made to date/time by paying the difference in price compared to the Base price. No refunds. Subject to seat availability",
+                "price": {
+                  "currency": "€",
+                  "amount": 17.8,
+                  "amountCrypto": "69ETFCb6/H1zO7+frgxIXw==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 42,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": false,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": {
+                  "imageId": "info",
+                  "message": "For the selected offer it is necessary to enter a Cartafreccia code.",
+                  "status": "WARNING"
+                },
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [
+                      {
+                        "typeId": 13,
+                        "name": "Loyalty code",
+                        "displayName": "Carta<i>FRECCIA</i>/X-GO",
+                        "value": null,
+                        "allowedValues": [],
+                        "required": true,
+                        "readOnly": false,
+                        "visible": true,
+                        "validationPattern": "[0-9]{9,9}",
+                        "inputPattern": "[0-9]",
+                        "minLength": 9,
+                        "maxLength": 9,
+                        "maxValue": null,
+                        "minValue": null,
+                        "type": "TRAVELLER",
+                        "flowType": "SELECTION",
+                        "identity": "INT",
+                        "errorMessage": null,
+                        "info": null,
+                        "valid": null
+                      }
+                    ],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "xfcc99968-4a5b-4b4f-9e8f-d1fa8e733712"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              },
+              {
+                "offerId": 1549,
+                "serviceId": 170,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE EASY",
+                "name": "SENIOR",
+                "description": "Offer reserved for X-GO cardholders for travel on Intercity and Intercity notte and CartaFRECCIA cardholders for travel on Frecciabianca. The traveller must be 60 years of age or older and be the cardholder. Changes may only be made to date/time by paying the difference in price compared to the Base price. No refunds. Subject to seat availability",
+                "price": {
+                  "currency": "€",
+                  "amount": 21.3,
+                  "amountCrypto": "m24Dny43v3xcMDqUCrae9w==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 21,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": false,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": {
+                  "imageId": "info",
+                  "message": "For the selected offer it is necessary to enter a Cartafreccia code.",
+                  "status": "WARNING"
+                },
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [
+                      {
+                        "typeId": 13,
+                        "name": "Loyalty code",
+                        "displayName": "Carta<i>FRECCIA</i>/X-GO",
+                        "value": null,
+                        "allowedValues": [],
+                        "required": true,
+                        "readOnly": false,
+                        "visible": true,
+                        "validationPattern": "[0-9]{9,9}",
+                        "inputPattern": "[0-9]",
+                        "minLength": 9,
+                        "maxLength": 9,
+                        "maxValue": null,
+                        "minValue": null,
+                        "type": "TRAVELLER",
+                        "flowType": "SELECTION",
+                        "identity": "INT",
+                        "errorMessage": null,
+                        "info": null,
+                        "valid": null
+                      }
+                    ],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x81ff6209-9588-463c-bdd4-d972dddf5f5d"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              }
+            ],
+            "minPrice": {
+              "currency": "€",
+              "amount": 10.9,
+              "amountCrypto": "AVJLGAjycIAagVLLUG/rSw==",
+              "originalAmount": null,
+              "indicative": false,
+              "hideAmount": false
+            },
+            "bestOfferId": 1101,
+            "extendedName": null,
+            "descriptionKey": "IC.170",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 158,
+            "name": "1ª CLASSE PLUS",
+            "shortName": "1ª CLASSE PLUS",
+            "groupName": "1ST CLASS",
+            "description": "Spacious seating (seat width: 63 cm; space between seats: 103 cm), ample luggage space, folding tables for each seat, electrical sockets, courtesy light, coat hooks, on-board cleaning personnel present during the entire journey.",
+            "descriptionStandard": "",
+            "offers": [
+              {
+                "offerId": 1,
+                "serviceId": 158,
+                "availableServiceId": null,
+                "serviceName": "1ª CLASSE PLUS",
+                "name": "BASE",
+                "description": "This ticket allows unlimited booking changes prior to departure. For Frecce Trains, if the Base price level originally paid is not available, you are required to request a ticket change and pay the resulting price difference. Refund with deduction.",
+                "price": {
+                  "currency": "€",
+                  "amount": 47.0,
+                  "amountCrypto": "ocdzq8FypS3LktEU3M7jqA==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 22,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": true,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "xe1f3c3d6-a3df-4b3f-b9e8-a11f23b31aa8"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              },
+              {
+                "offerId": 1100,
+                "serviceId": 158,
+                "availableServiceId": null,
+                "serviceName": "1ª CLASSE PLUS",
+                "name": "Economy",
+                "description": "Reservation change allowed before departure. Refund not allowed. Limited seats",
+                "price": {
+                  "currency": "€",
+                  "amount": 33.9,
+                  "amountCrypto": "hKEz/8IAR+4Q2kN8mH1t1A==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 23,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x4e5f4f61-e817-47f6-9a0a-79496fddcdf8"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              },
+              {
+                "offerId": 1101,
+                "serviceId": 158,
+                "availableServiceId": null,
+                "serviceName": "1ª CLASSE PLUS",
+                "name": "Super Economy",
+                "description": "Reservation change and refund not allowed. Limited seats",
+                "price": {
+                  "currency": "€",
+                  "amount": 15.9,
+                  "amountCrypto": "sPW2vX/7p9D23onqDl/DmA==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 23,
+                "canModify": false,
+                "canChange": false,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x2bf06c0c-6c45-458c-ae72-8c139cb35c31"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              },
+              {
+                "offerId": 1814,
+                "serviceId": 158,
+                "availableServiceId": null,
+                "serviceName": "1ª CLASSE PLUS",
+                "name": "YOUNG",
+                "description": "Offer reserved for X-GO cardholders for travel on Intercity and Intercity notte and CartaFRECCIA cardholders for travel on Frecciabianca. The traveller must be under 30 years of age and be the cardholder. Changes may only be made to date/time by paying the difference in price compared to the Base price. No refunds. Subject to seat availability",
+                "price": {
+                  "currency": "€",
+                  "amount": 14.1,
+                  "amountCrypto": "4ZadgBqyfm8t0v0K7rJaqg==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 14,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": false,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": {
+                  "imageId": "info",
+                  "message": "For the selected offer it is necessary to enter a Cartafreccia code.",
+                  "status": "WARNING"
+                },
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [
+                      {
+                        "typeId": 13,
+                        "name": "Loyalty code",
+                        "displayName": "Carta<i>FRECCIA</i>/X-GO",
+                        "value": null,
+                        "allowedValues": [],
+                        "required": true,
+                        "readOnly": false,
+                        "visible": true,
+                        "validationPattern": "[0-9]{9,9}",
+                        "inputPattern": "[0-9]",
+                        "minLength": 9,
+                        "maxLength": 9,
+                        "maxValue": null,
+                        "minValue": null,
+                        "type": "TRAVELLER",
+                        "flowType": "SELECTION",
+                        "identity": "INT",
+                        "errorMessage": null,
+                        "info": null,
+                        "valid": null
+                      }
+                    ],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x493de1dc-7fb7-45b7-a90a-04ddf39b2673"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              },
+              {
+                "offerId": 1549,
+                "serviceId": 158,
+                "availableServiceId": null,
+                "serviceName": "1ª CLASSE PLUS",
+                "name": "SENIOR",
+                "description": "Offer reserved for X-GO cardholders for travel on Intercity and Intercity notte and CartaFRECCIA cardholders for travel on Frecciabianca. The traveller must be 60 years of age or older and be the cardholder. Changes may only be made to date/time by paying the difference in price compared to the Base price. No refunds. Subject to seat availability",
+                "price": {
+                  "currency": "€",
+                  "amount": 28.2,
+                  "amountCrypto": "om2bbtdFEqwY2mc349iHKQ==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 5,
+                "canModify": true,
+                "canChange": true,
+                "canRefund": false,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": false,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": {
+                  "imageId": "info",
+                  "message": "For the selected offer it is necessary to enter a Cartafreccia code.",
+                  "status": "WARNING"
+                },
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [
+                      {
+                        "typeId": 13,
+                        "name": "Loyalty code",
+                        "displayName": "Carta<i>FRECCIA</i>/X-GO",
+                        "value": null,
+                        "allowedValues": [],
+                        "required": true,
+                        "readOnly": false,
+                        "visible": true,
+                        "validationPattern": "[0-9]{9,9}",
+                        "inputPattern": "[0-9]",
+                        "minLength": 9,
+                        "maxLength": 9,
+                        "maxValue": null,
+                        "minValue": null,
+                        "type": "TRAVELLER",
+                        "flowType": "SELECTION",
+                        "identity": "INT",
+                        "errorMessage": null,
+                        "info": null,
+                        "valid": null
+                      }
+                    ],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x2a888861-cdf8-47a3-bef0-fd16725e0577"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": false,
+                "selecteable": true
+              }
+            ],
+            "minPrice": {
+              "currency": "€",
+              "amount": 15.9,
+              "amountCrypto": "sPW2vX/7p9D23onqDl/DmA==",
+              "originalAmount": null,
+              "indicative": false,
+              "hideAmount": false
+            },
+            "bestOfferId": 1101,
+            "extendedName": null,
+            "descriptionKey": "IC.158",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": true,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": "family",
         "message": "Family area available in coach 3 on InterCity 541",
         "status": "WARNING"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [
+        {
+          "denomination": "Fast Regional",
+          "name": "3997",
+          "offer": "Ordinaria",
+          "service": "2ª Classe"
+        },
+        {
+          "denomination": "Regionale Veloce TTPER",
+          "name": "3917",
+          "offer": "Ordinaria",
+          "service": "2ª Classe"
+        },
+        {
+          "denomination": "Intercity",
+          "name": "541",
+          "offer": "Super Economy",
+          "service": "2ª Classe Easy"
+        }
+      ],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 83,
+      "decimalRegionalLoyaltyPoints": 83.6
+    },
+    "canShowSeatMap": true,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
   },
   {
-    "_type": "TICKET",
-    "id": "x1639dd30-480d-4ad6-96ab-6253ea1af0f7",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T10:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T14:25:00.000+02:00",
-    "duration": "3h 47min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "9413",
-        "trainCategory": "Frecciarossa",
-        "acronym": "FR",
-        "denomination": "FRECCIAROSSA",
-        "name": "9413",
-        "logoId": "FR",
-        "urban": false
-      }
-    ],
-    "price": null,
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "x3fad4745-57bd-4f54-81fe-43635932b0c0",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T10:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T14:25:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x3177c50f-db5a-4263-9f00-4c018256ae58",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T10:38:00.000+02:00",
+      "arrivalTime": "2026-07-30T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "9413",
           "trainCategory": "Frecciarossa",
           "acronym": "FR",
@@ -368,71 +1808,204 @@
           "name": "9413",
           "logoId": "FR",
           "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x6d005315-ba13-4a96-8f5b-5777bf6faa82",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T10:38:00.000+02:00",
+          "arrivalTime": "2026-07-30T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9413",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "x6d005315-ba13-4a96-8f5b-5777bf6faa82",
+        "summaries": [
+          {
+            "name": "Frecciarossa 9413",
+            "description": "Venezia Mestre (10:38) - Roma Termini (14:25)",
+            "duration": "3h 47min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T10:38:00.000+02:00",
+            "arrivalTime": "2026-07-30T14:25:00.000+02:00",
+            "trainInfo": {
+              "description": "9413",
+              "trainCategory": "Frecciarossa",
+              "acronym": "FR",
+              "denomination": "FRECCIAROSSA",
+              "name": "9413",
+              "logoId": "FR",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 30005,
+            "name": "STANDARD",
+            "shortName": "STANDARD",
+            "groupName": "STANDARD",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30005",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30004,
+            "name": "PREMIUM",
+            "shortName": "PREMIUM",
+            "groupName": "PREMIUM",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30004",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30002,
+            "name": "BUSINESS",
+            "shortName": "BUSINESS",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30002",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30003,
+            "name": "BUSINESS AREA SILENZIO",
+            "shortName": "AREA SILENZIO",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30003",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30000,
+            "name": "EXECUTIVE",
+            "shortName": "EXECUTIVE",
+            "groupName": "EXECUTIVE",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30000",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": null,
         "message": "Travel solution temporarily not available for the selected date",
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -32.86 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 23.25
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 56.11
+        },
+        {
+          "type": "PLANE",
+          "kgEmissions": 104.57
+        }
+      ]
+    }
   },
   {
-    "_type": "TICKET",
-    "id": "x2bf026d6-e6e4-4be2-a131-6411f2b6d042",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T10:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T15:10:00.000+02:00",
-    "duration": "4h 17min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "3971",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Fast Regional",
-        "name": "3971",
-        "logoId": "RV",
-        "urban": false
-      },
-      {
-        "description": "9627",
-        "trainCategory": "Frecciarossa",
-        "acronym": "FR",
-        "denomination": "FRECCIAROSSA",
-        "name": "9627",
-        "logoId": "FR",
-        "urban": false
-      }
-    ],
-    "price": {
-      "currency": "€",
-      "amount": 14.65,
-      "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
-      "originalAmount": null,
-      "indicative": false,
-      "hideAmount": false
-    },
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "x2f4151e1-df42-49dc-863d-4a7c6cac8014",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T10:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T12:45:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x8827d5d9-b8c9-4e84-bb7a-41c3196779a5",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T10:53:00.000+02:00",
+      "arrivalTime": "2026-07-30T15:10:00.000+02:00",
+      "duration": "4h 17min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "3971",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -441,18 +2014,7 @@
           "logoId": "RV",
           "urban": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "xac315ca6-fe02-4ba7-af2d-a3835df1088f",
-        "origin": "Bologna Centrale",
-        "bdoOrigin": "S01700",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T13:07:00.000+02:00",
-        "arrivalTime": "2026-07-30T15:10:00.000+02:00",
-        "salable": false,
-        "train": {
+        {
           "description": "9627",
           "trainCategory": "Frecciarossa",
           "acronym": "FR",
@@ -460,55 +2022,350 @@
           "name": "9627",
           "logoId": "FR",
           "urban": false
+        }
+      ],
+      "price": {
+        "currency": "€",
+        "amount": 14.65,
+        "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+        "originalAmount": null,
+        "indicative": false,
+        "hideAmount": false
+      },
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xc4684803-27a8-48e7-af45-b24b11d90ed8",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2026-07-30T10:53:00.000+02:00",
+          "arrivalTime": "2026-07-30T12:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3971",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3971",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
+        {
+          "id": "x3629f6fb-965c-4e0e-ae45-fec0717937ac",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S01700",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T13:07:00.000+02:00",
+          "arrivalTime": "2026-07-30T15:10:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9627",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9627",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "xc4684803-27a8-48e7-af45-b24b11d90ed8",
+        "summaries": [
+          {
+            "name": "Regionale Veloce 3971",
+            "description": "Venezia Mestre (10:53) - Bologna Centrale (12:45)",
+            "duration": "1h 52min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Bologna Centrale",
+            "departureTime": "2026-07-30T10:53:00.000+02:00",
+            "arrivalTime": "2026-07-30T12:45:00.000+02:00",
+            "trainInfo": {
+              "description": "3971",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Fast Regional",
+              "name": "3971",
+              "logoId": "RV",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": 69,
+        "selectedServiceId": 201,
+        "services": [
+          {
+            "id": 201,
+            "name": "2ª CLASSE",
+            "shortName": "2ª CLASSE",
+            "groupName": "2ND CLASS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [
+              {
+                "offerId": 69,
+                "serviceId": 201,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE",
+                "name": "ORDINARIA",
+                "description": "Your ticket will be validated automatically on the scheduled departure of your train. Have you changed your mind? No problem! By 11.59 p.m. on the day before your trip, you can change the date and time, and on the day of travel you can change the departure time before the ticket is automatically validated. Once the ticket is validated, it can no longer be modified.",
+                "price": {
+                  "currency": "€",
+                  "amount": 14.65,
+                  "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 32767,
+                "canModify": null,
+                "canChange": null,
+                "canRefund": null,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": false,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x3c7aa964-3a12-4e13-8c89-7eb380b4566d"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": true,
+                "selecteable": true
+              }
+            ],
+            "minPrice": {
+              "currency": "€",
+              "amount": 14.65,
+              "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+              "originalAmount": null,
+              "indicative": false,
+              "hideAmount": false
+            },
+            "bestOfferId": 69,
+            "extendedName": null,
+            "descriptionKey": "201",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": true
+      },
+      {
+        "id": "x3629f6fb-965c-4e0e-ae45-fec0717937ac",
+        "summaries": [
+          {
+            "name": "Frecciarossa 9627",
+            "description": "Bologna Centrale (13:07) - Roma Termini (15:10)",
+            "duration": "2h 03min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Bologna Centrale",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T13:07:00.000+02:00",
+            "arrivalTime": "2026-07-30T15:10:00.000+02:00",
+            "trainInfo": {
+              "description": "9627",
+              "trainCategory": "Frecciarossa",
+              "acronym": "FR",
+              "denomination": "FRECCIAROSSA",
+              "name": "9627",
+              "logoId": "FR",
+              "urban": false
+            },
+            "bdoOrigin": "S01700",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 30005,
+            "name": "STANDARD",
+            "shortName": "STANDARD",
+            "groupName": "STANDARD",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30005",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30004,
+            "name": "PREMIUM",
+            "shortName": "PREMIUM",
+            "groupName": "PREMIUM",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30004",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30002,
+            "name": "BUSINESS",
+            "shortName": "BUSINESS",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30002",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30003,
+            "name": "BUSINESS AREA SILENZIO",
+            "shortName": "AREA SILENZIO",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30003",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30000,
+            "name": "EXECUTIVE",
+            "shortName": "EXECUTIVE",
+            "groupName": "EXECUTIVE",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30000",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": null,
         "message": "Travel solution temporarily not available for the selected date",
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [
+        {
+          "denomination": "Fast Regional",
+          "name": "3971",
+          "offer": "Ordinaria",
+          "service": "2ª Classe"
+        }
+      ],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -10.81 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 7.35
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 18.16
+        }
+      ]
+    }
   },
   {
-    "_type": "TICKET",
-    "id": "x52dc4216-b6ac-4ed0-b577-672cf5f3e1c5",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T11:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T15:30:00.000+02:00",
-    "duration": "3h 52min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "9415",
-        "trainCategory": "Frecciarossa",
-        "acronym": "FR",
-        "denomination": "FRECCIAROSSA",
-        "name": "9415",
-        "logoId": "FR",
-        "urban": false
-      }
-    ],
-    "price": null,
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "x91249337-6e3c-4379-af85-ce31efe3c214",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T11:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T15:30:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x56adb089-687d-4714-b33c-c4fdf849b5eb",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T11:38:00.000+02:00",
+      "arrivalTime": "2026-07-30T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "9415",
           "trainCategory": "Frecciarossa",
           "acronym": "FR",
@@ -516,71 +2373,204 @@
           "name": "9415",
           "logoId": "FR",
           "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xe10da6fe-b93d-4bd3-8a29-d66c5867a239",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T11:38:00.000+02:00",
+          "arrivalTime": "2026-07-30T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9415",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "xe10da6fe-b93d-4bd3-8a29-d66c5867a239",
+        "summaries": [
+          {
+            "name": "Frecciarossa 9415",
+            "description": "Venezia Mestre (11:38) - Roma Termini (15:30)",
+            "duration": "3h 52min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T11:38:00.000+02:00",
+            "arrivalTime": "2026-07-30T15:30:00.000+02:00",
+            "trainInfo": {
+              "description": "9415",
+              "trainCategory": "Frecciarossa",
+              "acronym": "FR",
+              "denomination": "FRECCIAROSSA",
+              "name": "9415",
+              "logoId": "FR",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 30005,
+            "name": "STANDARD",
+            "shortName": "STANDARD",
+            "groupName": "STANDARD",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30005",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30004,
+            "name": "PREMIUM",
+            "shortName": "PREMIUM",
+            "groupName": "PREMIUM",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30004",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30002,
+            "name": "BUSINESS",
+            "shortName": "BUSINESS",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30002",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30003,
+            "name": "BUSINESS AREA SILENZIO",
+            "shortName": "AREA SILENZIO",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30003",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30000,
+            "name": "EXECUTIVE",
+            "shortName": "EXECUTIVE",
+            "groupName": "EXECUTIVE",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30000",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": null,
         "message": "Travel solution temporarily not available for the selected date",
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -32.86 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 23.25
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 56.11
+        },
+        {
+          "type": "PLANE",
+          "kgEmissions": 104.57
+        }
+      ]
+    }
   },
   {
-    "_type": "TICKET",
-    "id": "xd86e6dda-0b40-49d1-82c4-81b7dff42342",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T11:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T16:15:00.000+02:00",
-    "duration": "4h 22min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "3973",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Fast Regional",
-        "name": "3973",
-        "logoId": "RV",
-        "urban": false
-      },
-      {
-        "description": "9631",
-        "trainCategory": "Frecciarossa",
-        "acronym": "FR",
-        "denomination": "FRECCIAROSSA",
-        "name": "9631",
-        "logoId": "FR",
-        "urban": false
-      }
-    ],
-    "price": {
-      "currency": "€",
-      "amount": 14.65,
-      "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
-      "originalAmount": null,
-      "indicative": false,
-      "hideAmount": false
-    },
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "xc8567b16-c8df-4b29-a055-865a78caa147",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T11:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T13:45:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x1d7e341e-9871-4e62-872e-2b262c2ec675",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T11:53:00.000+02:00",
+      "arrivalTime": "2026-07-30T16:15:00.000+02:00",
+      "duration": "4h 22min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "3973",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -589,18 +2579,7 @@
           "logoId": "RV",
           "urban": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "x6bfad48c-2679-447c-9007-73b2751e7071",
-        "origin": "Bologna Centrale",
-        "bdoOrigin": "S01700",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T14:07:00.000+02:00",
-        "arrivalTime": "2026-07-30T16:15:00.000+02:00",
-        "salable": false,
-        "train": {
+        {
           "description": "9631",
           "trainCategory": "Frecciarossa",
           "acronym": "FR",
@@ -608,80 +2587,350 @@
           "name": "9631",
           "logoId": "FR",
           "urban": false
+        }
+      ],
+      "price": {
+        "currency": "€",
+        "amount": 14.65,
+        "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+        "originalAmount": null,
+        "indicative": false,
+        "hideAmount": false
+      },
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x7e550974-ef9d-48a5-bf3f-8481d4a8f2fa",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2026-07-30T11:53:00.000+02:00",
+          "arrivalTime": "2026-07-30T13:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3973",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3973",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
+        {
+          "id": "x21e6a478-2553-4078-b141-7e524c553f4f",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S01700",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T14:07:00.000+02:00",
+          "arrivalTime": "2026-07-30T16:15:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9631",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9631",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "x7e550974-ef9d-48a5-bf3f-8481d4a8f2fa",
+        "summaries": [
+          {
+            "name": "Regionale Veloce 3973",
+            "description": "Venezia Mestre (11:53) - Bologna Centrale (13:45)",
+            "duration": "1h 52min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Bologna Centrale",
+            "departureTime": "2026-07-30T11:53:00.000+02:00",
+            "arrivalTime": "2026-07-30T13:45:00.000+02:00",
+            "trainInfo": {
+              "description": "3973",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Fast Regional",
+              "name": "3973",
+              "logoId": "RV",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": 69,
+        "selectedServiceId": 201,
+        "services": [
+          {
+            "id": 201,
+            "name": "2ª CLASSE",
+            "shortName": "2ª CLASSE",
+            "groupName": "2ND CLASS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [
+              {
+                "offerId": 69,
+                "serviceId": 201,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE",
+                "name": "ORDINARIA",
+                "description": "Your ticket will be validated automatically on the scheduled departure of your train. Have you changed your mind? No problem! By 11.59 p.m. on the day before your trip, you can change the date and time, and on the day of travel you can change the departure time before the ticket is automatically validated. Once the ticket is validated, it can no longer be modified.",
+                "price": {
+                  "currency": "€",
+                  "amount": 14.65,
+                  "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 32767,
+                "canModify": null,
+                "canChange": null,
+                "canRefund": null,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": false,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "xb0ee8f4b-f6ac-4acf-a73c-963cb0a8f125"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": true,
+                "selecteable": true
+              }
+            ],
+            "minPrice": {
+              "currency": "€",
+              "amount": 14.65,
+              "amountCrypto": "1idjP6Ey+ILadNBc4bkTFA==",
+              "originalAmount": null,
+              "indicative": false,
+              "hideAmount": false
+            },
+            "bestOfferId": 69,
+            "extendedName": null,
+            "descriptionKey": "201",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": true
+      },
+      {
+        "id": "x21e6a478-2553-4078-b141-7e524c553f4f",
+        "summaries": [
+          {
+            "name": "Frecciarossa 9631",
+            "description": "Bologna Centrale (14:07) - Roma Termini (16:15)",
+            "duration": "2h 08min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Bologna Centrale",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T14:07:00.000+02:00",
+            "arrivalTime": "2026-07-30T16:15:00.000+02:00",
+            "trainInfo": {
+              "description": "9631",
+              "trainCategory": "Frecciarossa",
+              "acronym": "FR",
+              "denomination": "FRECCIAROSSA",
+              "name": "9631",
+              "logoId": "FR",
+              "urban": false
+            },
+            "bdoOrigin": "S01700",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 30005,
+            "name": "STANDARD",
+            "shortName": "STANDARD",
+            "groupName": "STANDARD",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30005",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30004,
+            "name": "PREMIUM",
+            "shortName": "PREMIUM",
+            "groupName": "PREMIUM",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30004",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30002,
+            "name": "BUSINESS",
+            "shortName": "BUSINESS",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30002",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30003,
+            "name": "BUSINESS AREA SILENZIO",
+            "shortName": "AREA SILENZIO",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30003",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30000,
+            "name": "EXECUTIVE",
+            "shortName": "EXECUTIVE",
+            "groupName": "EXECUTIVE",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30000",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": null,
         "message": "Travel solution temporarily not available for the selected date",
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [
+        {
+          "denomination": "Fast Regional",
+          "name": "3973",
+          "offer": "Ordinaria",
+          "service": "2ª Classe"
+        }
+      ],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -10.81 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 7.35
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 18.16
+        }
+      ]
+    }
   },
   {
-    "_type": "TICKET",
-    "id": "xa7ad5f85-3cc6-4720-8620-1715e0fcc0cb",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T11:53:00.000+02:00",
-    "arrivalTime": "2026-07-30T22:35:00.000+02:00",
-    "duration": "10h 42min",
-    "status": "SALEABLE",
-    "trains": [
-      {
-        "description": "3973",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Fast Regional",
-        "name": "3973",
-        "logoId": "RV",
-        "urban": false
-      },
-      {
-        "description": "3925",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Regionale Veloce TTPER",
-        "name": "3925",
-        "logoId": "TTPER",
-        "urban": false
-      },
-      {
-        "description": "4157",
-        "trainCategory": "Regionale Veloce",
-        "acronym": "RV",
-        "denomination": "Fast Regional",
-        "name": "4157",
-        "logoId": "RV",
-        "urban": false
-      }
-    ],
-    "price": {
-      "currency": "€",
-      "amount": 51.15,
-      "amountCrypto": "vH430tJaxnr0n4cXFUnOSQ==",
-      "originalAmount": null,
-      "indicative": false,
-      "hideAmount": false
-    },
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "x9f301987-90f1-418a-89bf-5ed8f5e74329",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Bologna Centrale",
-        "departureTime": "2026-07-30T11:53:00.000+02:00",
-        "arrivalTime": "2026-07-30T13:45:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "xd47622dd-cb25-42ea-918e-d0c7fefcfc00",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T11:53:00.000+02:00",
+      "arrivalTime": "2026-07-30T22:35:00.000+02:00",
+      "duration": "10h 42min",
+      "status": "SALEABLE",
+      "trains": [
+        {
           "description": "3973",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -690,18 +2939,7 @@
           "logoId": "RV",
           "urban": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "xf64e92a5-2668-4081-bdbb-19bf905dc81b",
-        "origin": "Bologna Centrale",
-        "bdoOrigin": "S05000",
-        "destination": "Falconara Marittima",
-        "departureTime": "2026-07-30T14:34:00.000+02:00",
-        "arrivalTime": "2026-07-30T17:03:00.000+02:00",
-        "salable": false,
-        "train": {
+        {
           "description": "3925",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -710,18 +2948,7 @@
           "logoId": "TTPER",
           "urban": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
-      },
-      {
-        "id": "xb8174a45-bc81-4434-bec8-429f8d418aa1",
-        "origin": "Falconara Marittima",
-        "bdoOrigin": "S07113",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T19:00:00.000+02:00",
-        "arrivalTime": "2026-07-30T22:35:00.000+02:00",
-        "salable": false,
-        "train": {
+        {
           "description": "4157",
           "trainCategory": "Regionale Veloce",
           "acronym": "RV",
@@ -729,50 +2956,299 @@
           "name": "4157",
           "logoId": "RV",
           "urban": false
+        }
+      ],
+      "price": {
+        "currency": "€",
+        "amount": 51.15,
+        "amountCrypto": "vH430tJaxnr0n4cXFUnOSQ==",
+        "originalAmount": null,
+        "indicative": false,
+        "hideAmount": false
+      },
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xdadc8b98-04b9-4940-9540-2df6ed08c22a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2026-07-30T11:53:00.000+02:00",
+          "arrivalTime": "2026-07-30T13:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3973",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3973",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
         },
-        "bluJetMessage": null,
-        "blueJet": false
+        {
+          "id": "x200041eb-3d6d-45fa-b5d7-dfa167b3f1b9",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S05000",
+          "destination": "Falconara Marittima",
+          "departureTime": "2026-07-30T14:34:00.000+02:00",
+          "arrivalTime": "2026-07-30T17:03:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3925",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Regionale Veloce TTPER",
+            "name": "3925",
+            "logoId": "TTPER",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        },
+        {
+          "id": "x8774df1f-dc22-4d96-9b29-711334c4cfb3",
+          "origin": "Falconara Marittima",
+          "bdoOrigin": "S07113",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T19:00:00.000+02:00",
+          "arrivalTime": "2026-07-30T22:35:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "4157",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "4157",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "x2202e7b2-656e-4930-9e10-2d50307a6066",
+        "summaries": [
+          {
+            "name": "Regionale Veloce 3973",
+            "description": "Venezia Mestre (11:53) - Bologna Centrale (13:45)",
+            "duration": "1h 52min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Bologna Centrale",
+            "departureTime": "2026-07-30T11:53:00.000+02:00",
+            "arrivalTime": "2026-07-30T13:45:00.000+02:00",
+            "trainInfo": {
+              "description": "3973",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Fast Regional",
+              "name": "3973",
+              "logoId": "RV",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          },
+          {
+            "name": "Regionale Veloce 3925",
+            "description": "Bologna Centrale (14:34) - Falconara Marittima (17:03)",
+            "duration": "2h 29min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Bologna Centrale",
+            "arrivalLocationName": "Falconara Marittima",
+            "departureTime": "2026-07-30T14:34:00.000+02:00",
+            "arrivalTime": "2026-07-30T17:03:00.000+02:00",
+            "trainInfo": {
+              "description": "3925",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Regionale Veloce TTPER",
+              "name": "3925",
+              "logoId": "TTPER",
+              "urban": false
+            },
+            "bdoOrigin": "S05000",
+            "showInfomobilityLink": false
+          },
+          {
+            "name": "Regionale Veloce 4157",
+            "description": "Falconara Marittima (19:00) - Roma Termini (22:35)",
+            "duration": "3h 35min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Falconara Marittima",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T19:00:00.000+02:00",
+            "arrivalTime": "2026-07-30T22:35:00.000+02:00",
+            "trainInfo": {
+              "description": "4157",
+              "trainCategory": "Regionale Veloce",
+              "acronym": "RV",
+              "denomination": "Fast Regional",
+              "name": "4157",
+              "logoId": "RV",
+              "urban": false
+            },
+            "bdoOrigin": "S07113",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": 69,
+        "selectedServiceId": 201,
+        "services": [
+          {
+            "id": 201,
+            "name": "2ª CLASSE",
+            "shortName": "2ª CLASSE",
+            "groupName": "2ND CLASS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [
+              {
+                "offerId": 69,
+                "serviceId": 201,
+                "availableServiceId": null,
+                "serviceName": "2ª CLASSE",
+                "name": "ORDINARIA",
+                "description": "Your ticket will be validated automatically on the scheduled departure of your train. Have you changed your mind? No problem! By 11.59 p.m. on the day before your trip, you can change the date and time, and on the day of travel you can change the departure time before the ticket is automatically validated. Once the ticket is validated, it can no longer be modified.",
+                "price": {
+                  "currency": "€",
+                  "amount": 51.15,
+                  "amountCrypto": "vH430tJaxnr0n4cXFUnOSQ==",
+                  "originalAmount": null,
+                  "indicative": false,
+                  "hideAmount": false
+                },
+                "discounts": [],
+                "availableAmount": 32767,
+                "canModify": null,
+                "canChange": null,
+                "canRefund": null,
+                "isCartaFrecciaProgram": false,
+                "isXgoProgram": true,
+                "isInhibited": false,
+                "status": "SALEABLE",
+                "infoMessages": [],
+                "reportItemMessage": null,
+                "travellers": [
+                  {
+                    "id": "x9ef9c3e6-3dcb-4443-83b7-3d9e3e6c591e",
+                    "firstName": null,
+                    "lastName": null,
+                    "loyaltyCode": null,
+                    "customerKey": null,
+                    "parameters": [],
+                    "loyaltyPoints": null,
+                    "regionalLoyaltyPoints": null,
+                    "decimalRegionalLoyaltyPoints": null,
+                    "showCFBalanceLink": false,
+                    "showREGBalanceLink": false,
+                    "title": null,
+                    "tags": [],
+                    "canCommunicatePrmStatus": false,
+                    "prmParameters": [],
+                    "adult": true,
+                    "loyaltyGiftCardBeneficiary": null
+                  }
+                ],
+                "offerKeys": [
+                  "x75cc1b64-96df-4269-a36f-c94f08c699f7"
+                ],
+                "forceEvaluation": false,
+                "paidSeatSelection": false,
+                "seatNotAssigned": false,
+                "additionalPrice": null,
+                "selected": true,
+                "selecteable": true
+              }
+            ],
+            "minPrice": {
+              "currency": "€",
+              "amount": 51.15,
+              "amountCrypto": "vH430tJaxnr0n4cXFUnOSQ==",
+              "originalAmount": null,
+              "indicative": false,
+              "hideAmount": false
+            },
+            "bestOfferId": 69,
+            "extendedName": null,
+            "descriptionKey": "201",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": true
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [
+        {
+          "denomination": "Fast Regional",
+          "name": "3973",
+          "offer": "Ordinaria",
+          "service": "2ª Classe"
+        },
+        {
+          "denomination": "Regionale Veloce TTPER",
+          "name": "3925",
+          "offer": "Ordinaria",
+          "service": "2ª Classe"
+        },
+        {
+          "denomination": "Fast Regional",
+          "name": "4157",
+          "offer": "Ordinaria",
+          "service": "2ª Classe"
+        }
+      ],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 102,
+      "decimalRegionalLoyaltyPoints": 102.3
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
   },
   {
-    "_type": "TICKET",
-    "id": "xf900304b-6c38-4713-a1eb-f907d8c7e3bb",
-    "origin": "Venezia Mestre",
-    "destination": "Roma Termini",
-    "departureTime": "2026-07-30T12:38:00.000+02:00",
-    "arrivalTime": "2026-07-30T16:24:00.000+02:00",
-    "duration": "3h 46min",
-    "status": "INHIBITED",
-    "trains": [
-      {
-        "description": "8419",
-        "trainCategory": "Frecciarossa",
-        "acronym": "FR",
-        "denomination": "FRECCIAROSSA",
-        "name": "8419",
-        "logoId": "FR",
-        "urban": false
-      }
-    ],
-    "price": null,
-    "discounts": [],
-    "nodes": [
-      {
-        "id": "xe4bca7e5-8415-4b95-a670-6f2744473347",
-        "origin": "Venezia Mestre",
-        "bdoOrigin": "S02593",
-        "destination": "Roma Termini",
-        "departureTime": "2026-07-30T12:38:00.000+02:00",
-        "arrivalTime": "2026-07-30T16:24:00.000+02:00",
-        "salable": false,
-        "train": {
+    "solution": {
+      "_type": "TICKET",
+      "id": "xb5f98077-378e-4d9b-9397-86a2c2d01db3",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2026-07-30T12:38:00.000+02:00",
+      "arrivalTime": "2026-07-30T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "INHIBITED",
+      "trains": [
+        {
           "description": "8419",
           "trainCategory": "Frecciarossa",
           "acronym": "FR",
@@ -780,21 +3256,190 @@
           "name": "8419",
           "logoId": "FR",
           "urban": false
-        },
-        "bluJetMessage": null,
-        "blueJet": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x4389e0ff-2ec8-4781-9b98-2e35c790f226",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2026-07-30T12:38:00.000+02:00",
+          "arrivalTime": "2026-07-30T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [
+      {
+        "id": "x4389e0ff-2ec8-4781-9b98-2e35c790f226",
+        "summaries": [
+          {
+            "name": "Frecciarossa 8419",
+            "description": "Venezia Mestre (12:38) - Roma Termini (16:24)",
+            "duration": "3h 46min",
+            "highlightedMessage": null,
+            "urban": false,
+            "vehicleInfo": null,
+            "departureLocationName": "Venezia Mestre",
+            "arrivalLocationName": "Roma Termini",
+            "departureTime": "2026-07-30T12:38:00.000+02:00",
+            "arrivalTime": "2026-07-30T16:24:00.000+02:00",
+            "trainInfo": {
+              "description": "8419",
+              "trainCategory": "Frecciarossa",
+              "acronym": "FR",
+              "denomination": "FRECCIAROSSA",
+              "name": "8419",
+              "logoId": "FR",
+              "urban": false
+            },
+            "bdoOrigin": "S02593",
+            "showInfomobilityLink": false
+          }
+        ],
+        "selectedOfferId": null,
+        "selectedServiceId": null,
+        "services": [
+          {
+            "id": 30005,
+            "name": "STANDARD",
+            "shortName": "STANDARD",
+            "groupName": "STANDARD",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30005",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30004,
+            "name": "PREMIUM",
+            "shortName": "PREMIUM",
+            "groupName": "PREMIUM",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30004",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30002,
+            "name": "BUSINESS",
+            "shortName": "BUSINESS",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30002",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30003,
+            "name": "BUSINESS AREA SILENZIO",
+            "shortName": "AREA SILENZIO",
+            "groupName": "BUSINESS",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30003",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          },
+          {
+            "id": 30000,
+            "name": "EXECUTIVE",
+            "shortName": "EXECUTIVE",
+            "groupName": "EXECUTIVE",
+            "description": null,
+            "descriptionStandard": "",
+            "offers": [],
+            "minPrice": null,
+            "bestOfferId": null,
+            "extendedName": null,
+            "descriptionKey": "frecciarossa.30000",
+            "alwaysGroupped": false,
+            "hideServiceGroup": null
+          }
+        ],
+        "infoMessages": [],
+        "canShowSeatMap": false,
+        "collapsedVisualization": true,
+        "regional": false
       }
     ],
-    "additionalPrice": null,
-    "description": null,
-    "validities": null,
-    "_messages": [
+    "customizes": [],
+    "stopList": [],
+    "messages": [
       {
         "imageId": null,
         "message": "Travel solution temporarily not available for the selected date",
         "status": "INFO"
       },
       null
-    ]
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": {
+      "summaryTitle": "<b> -33.03 kg</b> compared to travel by car",
+      "summaryDescription": "amount based on a single passenger",
+      "vehicleDetails": [
+        {
+          "type": "TRAIN",
+          "kgEmissions": 23.08
+        },
+        {
+          "type": "CAR",
+          "kgEmissions": 56.11
+        },
+        {
+          "type": "PLANE",
+          "kgEmissions": 104.57
+        }
+      ]
+    }
   }
 ]
