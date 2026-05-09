@@ -29,11 +29,40 @@ LOGO_URL = "https://raw.githubusercontent.com/poggiodelpapa/bullet-traint/main/b
 BRAND_COLOR = "#017a8e"
 
 
-# ─── ID stazioni UIC Trenitalia ───────────────────────────────────────────────
-STAZIONE_ID = {
-    "VENEZIA MESTRE": "830001170",
-    "ROMA TERMINI":   "830000219",
+# ─── Lookup ID stazione dall'API ──────────────────────────────────────────────
+
+HEADERS_BASE = {
+    "Content-Type": "application/json",
+    "Accept":       "application/json",
+    "User-Agent":   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                    "AppleWebKit/537.36 (KHTML, like Gecko) "
+                    "Chrome/124.0.0.0 Safari/537.36",
+    "Origin":       "https://www.lefrecce.it",
+    "Referer":      "https://www.lefrecce.it/",
 }
+
+
+def get_station_id(nome_stazione):
+    """
+    Risolve il nome di una stazione nel suo ID numerico
+    usando l'endpoint di autocompletamento dell'API BFF.
+    """
+    url = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/locations/search"
+    params = {"name": nome_stazione, "limit": 5}
+    resp = requests.get(url, params=params, headers=HEADERS_BASE, timeout=15)
+    resp.raise_for_status()
+    risultati = resp.json()
+
+    print(f"   Lookup '{nome_stazione}': {risultati}")
+
+    if not risultati:
+        raise ValueError(f"Stazione non trovata: {nome_stazione}")
+
+    # Prendi la corrispondenza esatta se esiste, altrimenti la prima
+    for r in risultati:
+        if r.get("name", "").upper() == nome_stazione.upper():
+            return r["id"]
+    return risultati[0]["id"]
 
 
 # ─── Chiamata API Trenitalia (BFF POST) ───────────────────────────────────────
@@ -41,18 +70,23 @@ STAZIONE_ID = {
 def cerca_treni():
     """
     Usa l'endpoint BFF di lefrecce.it con POST JSON.
-    Payload e struttura risposta documentati in:
-    https://github.com/SimoDax/Trenitalia-API/wiki/Nuove-API-Trenitalia-lefrecce.it
+    Documentazione: https://github.com/SimoDax/Trenitalia-API/wiki/Nuove-API-Trenitalia-lefrecce.it
     """
+    # Risolvi gli ID stazione dinamicamente
+    print("   Risolvo ID stazioni...")
+    id_origine = get_station_id(ORIGINE)
+    id_dest    = get_station_id(DESTINAZIONE)
+    print(f"   {ORIGINE} → ID {id_origine}")
+    print(f"   {DESTINAZIONE} → ID {id_dest}")
+
     url = "https://www.lefrecce.it/Channels.Website.BFF.WEB/website/ticket/solutions"
 
     data_iso = datetime.strptime(DATA_VIAGGIO, "%d/%m/%Y").strftime("%Y-%m-%d")
-    # Il timezone +02:00 (ora legale italiana) è richiesto dall'API
     departure_time = f"{data_iso}T{ORA_DA:02d}:00:00.000+02:00"
 
     payload = {
-        "departureLocationId": int(STAZIONE_ID[ORIGINE]),
-        "arrivalLocationId":   int(STAZIONE_ID[DESTINAZIONE]),
+        "departureLocationId": id_origine,
+        "arrivalLocationId":   id_dest,
         "departureTime":       departure_time,
         "adults":              1,
         "children":            0,
@@ -69,18 +103,8 @@ def cerca_treni():
         },
     }
 
-    headers = {
-        "Content-Type": "application/json",
-        "Accept":       "application/json",
-        "User-Agent":   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                        "AppleWebKit/537.36 (KHTML, like Gecko) "
-                        "Chrome/124.0.0.0 Safari/537.36",
-        "Origin":       "https://www.lefrecce.it",
-        "Referer":      "https://www.lefrecce.it/",
-    }
-
-    resp = requests.post(url, json=payload, headers=headers, timeout=30)
-    print(f"   API → HTTP {resp.status_code} | {len(resp.text)} chars")
+    resp = requests.post(url, json=payload, headers=HEADERS_BASE, timeout=30)
+    print(f"   API soluzioni → HTTP {resp.status_code} | {len(resp.text)} chars")
     print(f"   Risposta (primi 300 chars): {resp.text[:300]}")
     resp.raise_for_status()
     data = resp.json()
