@@ -12,7 +12,7 @@ import requests
 
 ORIGINE           = "VENEZIA MESTRE"
 DESTINAZIONE      = "ROMA TERMINI"
-DATA_VIAGGIO      = "30/06/2026"
+DATA_VIAGGIO      = "30/07/2026"
 ORA_DA            = 9    # partenze dalle 09:00
 ORA_A             = 15   # fino alle 15:00
 SOLO_FRECCIAROSSA = True
