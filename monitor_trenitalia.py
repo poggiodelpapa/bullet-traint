@@ -106,9 +106,17 @@ def cerca_treni():
     data = resp.json()
 
     soluzioni_raw = data.get("solutions", [])
-    # L'API restituisce un array flat di oggetti ticket diretti (senza wrapper)
-    print(f"   Soluzioni totali ricevute: {len(soluzioni_raw)}")
-    return soluzioni_raw
+    # L'API può restituire sia oggetti flat {"_type":"TICKET",...}
+    # che oggetti wrappati {"solution":{...}, "messages":[...]}
+    # Gestiamo entrambi i casi.
+    soluzioni = []
+    for item in soluzioni_raw:
+        if isinstance(item, dict) and "solution" in item:
+            soluzioni.append(item["solution"])
+        else:
+            soluzioni.append(item)
+    print(f"   Soluzioni totali ricevute: {len(soluzioni)}")
+    return soluzioni
 
 
 # ─── Parsing e filtro ──────────────────────────────────────────────────────────
