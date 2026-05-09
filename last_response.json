@@ -1,1 +1,903 @@
-[]
+[
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x18f4b1b0-4de0-49c9-8c4e-3547c084413b",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T09:38:00.000+02:00",
+      "arrivalTime": "2025-07-30T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xdfd828d9-0db3-4e21-90be-a40ff5a6fa02",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T09:38:00.000+02:00",
+          "arrivalTime": "2025-07-30T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x9b2e6bb3-7f7e-41df-ba53-8f0c3aff8832",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T09:53:00.000+02:00",
+      "arrivalTime": "2025-07-30T14:10:00.000+02:00",
+      "duration": "4h 17min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "3997",
+          "trainCategory": "Regionale Veloce",
+          "acronym": "RV",
+          "denomination": "Fast Regional",
+          "name": "3997",
+          "logoId": "RV",
+          "urban": false
+        },
+        {
+          "description": "9623",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9623",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x5636bd2f-6f6f-4846-bb19-d1074ea308d8",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2025-07-30T09:53:00.000+02:00",
+          "arrivalTime": "2025-07-30T11:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3997",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3997",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        },
+        {
+          "id": "xb6cd6999-ea36-4080-b4fa-7b94ed96b646",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S01700",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T12:07:00.000+02:00",
+          "arrivalTime": "2025-07-30T14:10:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9623",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9623",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      {
+        "imageId": null,
+        "message": "Regional tickets can't be purchased in the last 5 minutes before departure",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x4787f304-1f19-48f4-85cc-51f8050d3aab",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T10:38:00.000+02:00",
+      "arrivalTime": "2025-07-30T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x91d0d1b1-ffce-49d0-831f-21bb2b8bd0c5",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T10:38:00.000+02:00",
+          "arrivalTime": "2025-07-30T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x198b02d2-1df9-48e0-9956-b91b8fb1ec26",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T10:53:00.000+02:00",
+      "arrivalTime": "2025-07-30T15:10:00.000+02:00",
+      "duration": "4h 17min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "3971",
+          "trainCategory": "Regionale Veloce",
+          "acronym": "RV",
+          "denomination": "Fast Regional",
+          "name": "3971",
+          "logoId": "RV",
+          "urban": false
+        },
+        {
+          "description": "9627",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9627",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x9e5ea2b8-aedc-4b45-9d03-ff18eb133344",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2025-07-30T10:53:00.000+02:00",
+          "arrivalTime": "2025-07-30T12:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3971",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3971",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        },
+        {
+          "id": "xa98a2b0e-29bf-47a1-ba3d-8244c5cc6b35",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S01700",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T13:07:00.000+02:00",
+          "arrivalTime": "2025-07-30T15:10:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9627",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9627",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      {
+        "imageId": null,
+        "message": "Regional tickets can't be purchased in the last 5 minutes before departure",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x03c3b929-725f-418a-a428-751a6ad8c4f7",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T11:38:00.000+02:00",
+      "arrivalTime": "2025-07-30T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x2161462b-04c5-48dd-9264-6d2d3e1a0a4e",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T11:38:00.000+02:00",
+          "arrivalTime": "2025-07-30T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x82a706a8-c010-4faf-b96a-3ca48f054f2f",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T11:53:00.000+02:00",
+      "arrivalTime": "2025-07-30T16:15:00.000+02:00",
+      "duration": "4h 22min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "3973",
+          "trainCategory": "Regionale Veloce",
+          "acronym": "RV",
+          "denomination": "Fast Regional",
+          "name": "3973",
+          "logoId": "RV",
+          "urban": false
+        },
+        {
+          "description": "9631",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9631",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xbc533553-2d48-4298-9942-ae82fa0b88e2",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Bologna Centrale",
+          "departureTime": "2025-07-30T11:53:00.000+02:00",
+          "arrivalTime": "2025-07-30T13:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "3973",
+            "trainCategory": "Regionale Veloce",
+            "acronym": "RV",
+            "denomination": "Fast Regional",
+            "name": "3973",
+            "logoId": "RV",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        },
+        {
+          "id": "x8c3ebd6e-17db-4398-8644-2b69d8effbeb",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S01700",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T14:07:00.000+02:00",
+          "arrivalTime": "2025-07-30T16:15:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9631",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9631",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      {
+        "imageId": null,
+        "message": "Regional tickets can't be purchased in the last 5 minutes before departure",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x58fb81b7-71f1-4d35-8673-ad9116131d48",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T12:38:00.000+02:00",
+      "arrivalTime": "2025-07-30T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x44110aad-a2e2-4ee6-ae35-8517a266f5c8",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T12:38:00.000+02:00",
+          "arrivalTime": "2025-07-30T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x6fbd3ee6-7a7e-4315-807e-ff06b906fef2",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T13:05:00.000+02:00",
+      "arrivalTime": "2025-07-30T17:10:00.000+02:00",
+      "duration": "4h 05min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        },
+        {
+          "description": "9637",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9637",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x38bae2b0-c8e5-42cc-aded-e77b13ff1b44",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Bologna Centrale",
+          "departureTime": "2025-07-30T13:05:00.000+02:00",
+          "arrivalTime": "2025-07-30T14:51:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        },
+        {
+          "id": "x63e54a1e-5333-4081-b48f-014601e53044",
+          "origin": "Bologna Centrale",
+          "bdoOrigin": "S01700",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T15:07:00.000+02:00",
+          "arrivalTime": "2025-07-30T17:10:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9637",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9637",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": "family",
+        "message": "Family area available in coach 3 on InterCity 584",
+        "status": "WARNING"
+      },
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "xe9c79f33-d920-4abc-9b85-d429f0330d11",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T13:05:00.000+02:00",
+      "arrivalTime": "2025-07-30T20:45:00.000+02:00",
+      "duration": "7h 40min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x5e3173de-e453-452d-83f4-0c70480bf891",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T13:05:00.000+02:00",
+          "arrivalTime": "2025-07-30T20:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": "family",
+        "message": "Family area available in coach 3 on InterCity 584",
+        "status": "WARNING"
+      },
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  },
+  {
+    "solution": {
+      "_type": "TICKET",
+      "id": "x1ccbb2e8-5352-46da-bee4-ab232c177867",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-07-30T13:38:00.000+02:00",
+      "arrivalTime": "2025-07-30T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x964bcadd-6fe9-4e81-8fb7-6ec1be2b36f0",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-07-30T13:38:00.000+02:00",
+          "arrivalTime": "2025-07-30T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null
+    },
+    "grids": [],
+    "customizes": [],
+    "stopList": [],
+    "messages": [
+      {
+        "imageId": null,
+        "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+        "status": "INFO"
+      },
+      null
+    ],
+    "availabilities": [],
+    "nextDaySolution": false,
+    "tooltip": {
+      "nodeServices": [],
+      "loyaltyPoints": 0.0,
+      "regionalLoyaltyPoints": 0,
+      "decimalRegionalLoyaltyPoints": 0.0
+    },
+    "canShowSeatMap": false,
+    "notAllOfferGroupStandard": false,
+    "silenceArea": false,
+    "fastPurchase": false,
+    "canShowGrid": false,
+    "containsAtacOffers": false,
+    "co2Emission": null
+  }
+]
