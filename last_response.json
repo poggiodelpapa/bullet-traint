@@ -2,7 +2,7 @@
   "01/09/2025": [
     {
       "_type": "TICKET",
-      "id": "xc66998a1-18b4-44fb-a5f1-d3c84f9f4a7f",
+      "id": "xa18c38cf-7ff7-4a89-8d40-174cfe440837",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T06:38:00.000+02:00",
@@ -24,7 +24,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xcec7d8aa-495c-49a2-867e-1aa2365498af",
+          "id": "x1641bc4b-1b45-41c0-b5c8-c68f8e99b14e",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -58,7 +58,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x57a27e95-3e0f-4523-9f24-4150099946f7",
+      "id": "xce5d9750-2ec9-4c4f-8ec9-fb09f62b10f4",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T07:38:00.000+02:00",
@@ -80,7 +80,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xa287682c-d796-41d4-abca-1745b0fade44",
+          "id": "x915c0189-6d8d-4c73-a706-32641496a991",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -114,7 +114,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xdb28c58c-f577-4ad9-8475-830715498d9a",
+      "id": "x0ce32215-bc18-41d8-8285-95026b3f9e90",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T08:34:00.000+02:00",
@@ -136,7 +136,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xef46ed0f-885b-4cae-b2bb-dd6e68bbc350",
+          "id": "x2e92069a-16b1-4aaf-a4de-de4669e2807a",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -170,7 +170,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x13616bc7-6122-4770-a28b-b1310bfca918",
+      "id": "xb5f0e6e8-9007-406b-8567-068a7ad24137",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T08:40:00.000+02:00",
@@ -192,7 +192,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x491bca6d-7f47-4bae-aab9-27da445df6d9",
+          "id": "x98634ad7-7363-4285-87f6-eb5a293ec8d9",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03304",
           "destination": "Roma Termini",
@@ -226,7 +226,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x0a166a9b-d8a3-4b83-a5ca-3f95e307a47e",
+      "id": "x818af856-8eda-4008-9f60-c6a0310ad591",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T09:38:00.000+02:00",
@@ -248,7 +248,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xb845408f-826b-4d60-94af-d7ea3477b23b",
+          "id": "x6dac6ddc-fb1b-40fc-8547-82a91ca9e037",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -282,7 +282,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xb687d775-3f37-44ad-a6e7-8a7149a84d30",
+      "id": "xa89d1030-986b-4553-8f00-cb8c31abd9d6",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T10:38:00.000+02:00",
@@ -304,7 +304,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x5de9ca88-3ad9-4cb4-8810-f7f722b65b02",
+          "id": "xecc964d5-e574-4e7f-bb11-8ee7c0dfa2c4",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -338,7 +338,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xe3643b6b-8f7d-4679-9898-a8ec403573a4",
+      "id": "xb547aa9a-5da1-480c-9ad3-8deb2b35a338",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T11:38:00.000+02:00",
@@ -360,7 +360,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x1c6778df-16bc-4ec7-a2db-85e307bc5c06",
+          "id": "x9661cc4b-87e0-49c5-9a1d-8fd6dc748fee",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -394,7 +394,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x6178b557-695d-4c33-827a-02d34c3e0881",
+      "id": "xb520a2e6-3e65-4d89-8fd3-78078cae9513",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T12:38:00.000+02:00",
@@ -416,7 +416,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x8f8336ad-8be8-4054-9ee7-db6d2920964a",
+          "id": "x66d4e8dd-884e-4c75-a7bb-5373b4b9fbdf",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -450,7 +450,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x657d4548-ce36-4283-b299-84155fb92555",
+      "id": "xedf9a40d-2967-4ef6-a96e-ea30e1c50142",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T13:05:00.000+02:00",
@@ -472,7 +472,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x903d5ebf-eacc-4f68-949f-e44d0f0da8a7",
+          "id": "x57621123-a890-4762-8824-ba920d819df7",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -511,7 +511,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xed9669e6-d6a4-47c2-aaca-1a321358b2f4",
+      "id": "xc49041a4-48dc-4ec0-a943-8b3f3eff0ef9",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-01T13:38:00.000+02:00",
@@ -533,7 +533,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xc552dc56-4063-4919-b859-43222c9aaa5a",
+          "id": "x8da28ada-4d8b-45f6-9796-1987376e09ed",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -569,7 +569,7 @@
   "02/09/2025": [
     {
       "_type": "TICKET",
-      "id": "x6e37d480-0a68-4b75-a688-212e3be02e1d",
+      "id": "x4c411d67-ec23-416f-bfb4-ed841e81e0c4",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T06:38:00.000+02:00",
@@ -591,7 +591,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xc7aa493b-018e-483e-8a64-8c1bb359a1a3",
+          "id": "x3ccaf881-5d7b-4b21-8f04-126577a06666",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -625,7 +625,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x50ff2abc-eb5b-4231-bc13-b5616fd56183",
+      "id": "x60135120-8b9c-4b98-b60d-e8c310f87c59",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T07:38:00.000+02:00",
@@ -647,7 +647,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x20bfe2e1-d429-4c23-80a6-633aecc8e6a3",
+          "id": "xf5fdca9b-8e38-4af6-8020-3ada55516b49",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -681,7 +681,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xe81df842-4b0d-4147-8466-03bd0c85f8a8",
+      "id": "x71169171-4ede-41b4-ae55-2f5fb69d415f",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T08:34:00.000+02:00",
@@ -703,7 +703,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x0790dbf9-ba04-4081-b86a-654d4f1063e7",
+          "id": "x09556776-42bf-4cc3-8708-504b43e9c643",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -737,7 +737,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xad887cb1-0a51-47ca-bbf8-9ef9524f36aa",
+      "id": "xb8bae866-a199-47cf-b9f0-90491c62056c",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T08:40:00.000+02:00",
@@ -759,7 +759,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x124db5a4-6c22-451b-973d-405e0d7e799f",
+          "id": "xccf992ad-042d-4f93-84e0-df06d1e447dc",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03304",
           "destination": "Roma Termini",
@@ -793,7 +793,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x0ef45e78-8609-468f-801c-9d4d3afb2794",
+      "id": "xdf9fe523-76c4-4aa2-89ee-1c1c5da46594",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T09:38:00.000+02:00",
@@ -815,7 +815,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x9b42b6cc-fa83-497c-970a-f25c223baaf6",
+          "id": "x714b4f9b-9c87-4fcf-8e9d-84ae8f3dfae5",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -849,7 +849,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xb4be4cfd-960b-4bad-8693-32428b80bf77",
+      "id": "xe460ed45-583f-4176-9791-beaff9b608d2",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T10:38:00.000+02:00",
@@ -871,7 +871,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x151bcef6-b53e-4fb2-a821-c45c2c2fe1b1",
+          "id": "x5143512d-f49f-4ead-ad73-eb23b64f7734",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -905,7 +905,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x0374eee0-3437-4fdf-9473-e9059cf2dc0e",
+      "id": "x9a35e56d-fcc0-4087-99f4-0622cf12ef48",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T11:38:00.000+02:00",
@@ -927,7 +927,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x029f5b3e-ea21-4d95-a045-b7f246641f96",
+          "id": "xf7b1041f-0092-452c-b45b-45d4944c521b",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -961,7 +961,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xe7bcade6-7ccb-4100-9fd2-2cd54adb47a0",
+      "id": "x8e1f8458-dba5-48ac-81bc-dcaa3013c793",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T12:38:00.000+02:00",
@@ -983,7 +983,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x1d356db2-ed71-476e-96b5-8d393baccbe4",
+          "id": "x693a969a-63c3-4cca-a831-be044ad4d7c1",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1017,7 +1017,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xbeec4d3f-5bb0-489e-8759-17661cdbc799",
+      "id": "xc0529cea-789f-4863-9c4e-962894b1cb97",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T13:05:00.000+02:00",
@@ -1039,7 +1039,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xdf020a81-2a20-44df-a6aa-a4c30b6cb1fc",
+          "id": "xa7fdb3c6-db9f-4c1b-9674-549a4813eb11",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -1078,7 +1078,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x74e5a5ee-eda0-4d4b-8c96-da8f8e09588c",
+      "id": "x74f9ed86-c901-4428-92e5-2ef5ef729fee",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-02T13:38:00.000+02:00",
@@ -1100,7 +1100,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x1cb2ed98-1eff-477b-86db-e8a08264998f",
+          "id": "xadf1bffb-a743-4111-ae2f-0fbacfe4ddcd",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1136,7 +1136,7 @@
   "03/09/2025": [
     {
       "_type": "TICKET",
-      "id": "xb6410c26-297a-4897-aede-6c6995205f09",
+      "id": "x236405f2-c974-4b24-9f7e-6d2fa6ef6f94",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T06:38:00.000+02:00",
@@ -1158,7 +1158,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x1322b3dc-d7ef-4cd9-9563-4f44392db041",
+          "id": "x4a09721f-7244-44a6-a209-dd5f273eb0b1",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1192,7 +1192,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xa9849b08-3d2c-47ed-95f6-d0dddff1e30b",
+      "id": "x93b6a454-7e5b-4e26-9b3c-455332429c8b",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T07:38:00.000+02:00",
@@ -1214,7 +1214,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x5ef74652-4b2a-469d-9d36-ef8f3c22dcad",
+          "id": "x8ecc5321-acba-43f6-bad1-827a1109f6db",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1248,7 +1248,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xfa9dc9b6-3785-4c83-9b31-7c095e57f5d9",
+      "id": "xa56bd010-8b57-4522-a721-439e391932e6",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T08:34:00.000+02:00",
@@ -1270,7 +1270,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x39aee0ec-732a-4a07-bffc-04da47b63b4d",
+          "id": "x7cc6519f-1f77-46b1-b927-8bd53cc7514d",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -1304,7 +1304,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x6db0617f-6102-4288-8095-864b7d7ce45a",
+      "id": "xd73d93be-6e3c-45f2-b9ee-b9356c67df24",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T08:40:00.000+02:00",
@@ -1326,7 +1326,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xa4e496e7-9e5b-4539-8456-c787df684e3c",
+          "id": "xf0d8942d-48b7-4723-8a4e-b0dd8f98d665",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03304",
           "destination": "Roma Termini",
@@ -1360,7 +1360,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x2d5867ac-8ad2-471b-9126-221d81022b67",
+      "id": "x41aaf7db-9b16-4ba3-aa7c-8e9f02333de3",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T09:38:00.000+02:00",
@@ -1382,7 +1382,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x134889c0-ed43-4fde-b6be-866f2d0bfaf6",
+          "id": "x2b485c74-fc3b-48be-af7b-1ef12c873708",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1416,7 +1416,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x414d27e3-044b-4cda-bc1c-df296abd6a9b",
+      "id": "x6104a529-83d0-43da-acf0-9c29fce6e905",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T10:38:00.000+02:00",
@@ -1438,7 +1438,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x0a64a02a-30ab-474b-9d27-51d2e783d214",
+          "id": "x2ce54efb-4452-43fc-8582-8d3666faa85e",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1472,7 +1472,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xb58ca241-f3fb-4774-8f8c-6e8b2056b906",
+      "id": "x385c5410-fa18-493e-8abd-cfd9aac25551",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T11:38:00.000+02:00",
@@ -1494,7 +1494,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xb3819fdc-d738-4638-9373-1794b120cc88",
+          "id": "xafba09ac-64b2-48c5-b5fa-26019a0f4900",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1528,7 +1528,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x2c47315b-7ecd-48ef-8a02-bff17a7d005f",
+      "id": "x89b6488d-fb08-44a0-9718-bab4c28a9895",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T12:38:00.000+02:00",
@@ -1550,7 +1550,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x0ad5a435-ce2a-4d8f-8460-9baec4b1f2e3",
+          "id": "x4c4ecf32-608d-4773-a0e9-7b27436d19e5",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1584,7 +1584,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x96711c52-87a9-49ac-90f6-566f7d5f3692",
+      "id": "xf926d1e1-0998-4ad8-8d70-a064cf3e0e5c",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T13:05:00.000+02:00",
@@ -1606,7 +1606,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xaac6f378-c261-40f3-8612-f0d51c262f11",
+          "id": "xe0ca8bdf-9230-4609-a0c1-6cca9df1782c",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -1645,7 +1645,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x361dc98d-7645-4c02-aa25-cf69bac66256",
+      "id": "x8ec4b26e-e305-457f-9a6a-a805bd2da814",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-03T13:38:00.000+02:00",
@@ -1667,7 +1667,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x54556884-0c79-4120-8c05-56d9e5286a82",
+          "id": "xf284b9d7-c3dc-4e5e-ac6b-19c28660c583",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1700,10 +1700,577 @@
       ]
     }
   ],
+  "04/09/2025": [
+    {
+      "_type": "TICKET",
+      "id": "xba17ecc1-186f-4e7d-81a1-587a41589866",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T06:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T10:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9403",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9403",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x6d404f30-38e2-41f6-8b38-23f70e3af3a7",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T06:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T10:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9403",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9403",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x511fdfc1-3c72-4b27-94b4-1e7346d2895d",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T07:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T11:22:00.000+02:00",
+      "duration": "3h 44min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9405",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9405",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x567a48b7-ebad-4155-a538-a79b704e5791",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T07:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T11:22:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9405",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9405",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x4642ee4c-57db-45cf-b85d-b4f4ce3e3224",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T08:34:00.000+02:00",
+      "arrivalTime": "2025-09-04T12:05:00.000+02:00",
+      "duration": "3h 31min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9466",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9466",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x33d88cf1-da73-429f-b4e8-ffb384a6470c",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T08:34:00.000+02:00",
+          "arrivalTime": "2025-09-04T12:05:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9466",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9466",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x6b24fd6e-2e14-4939-8628-f010ff733567",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T08:40:00.000+02:00",
+      "arrivalTime": "2025-09-04T12:25:00.000+02:00",
+      "duration": "3h 45min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9409",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9409",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x71188018-7608-4bf9-8052-3e941513e9d7",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03304",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T08:40:00.000+02:00",
+          "arrivalTime": "2025-09-04T12:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9409",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9409",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xea93db10-335d-4513-bb41-e7ad7d439544",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T09:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xe101b36a-b972-4d74-8969-e8796c7b3336",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T09:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xbbe8713e-aa7c-44af-b798-938ff1c04a78",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T10:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xb91938b1-69a5-4ac8-b3a4-ba84852ae60a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T10:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x043a0b3b-ef5e-4fc8-86b9-450b7ba4b5cb",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T11:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x40e9caa8-3e8e-4e67-8663-127b9c269653",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T11:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x4585982b-7b1e-4185-b2a1-a0365b77e000",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T12:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x06c319d6-3f50-4c57-8e6d-0e5e0a8ded26",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T12:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x8296504c-6d47-4144-946c-ea995890a3a4",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T13:05:00.000+02:00",
+      "arrivalTime": "2025-09-04T20:45:00.000+02:00",
+      "duration": "7h 40min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xbe92241e-1b86-403e-807e-e95f3a2615a1",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T13:05:00.000+02:00",
+          "arrivalTime": "2025-09-04T20:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": "family",
+          "message": "Family area available in coach 3 on InterCity 584",
+          "status": "WARNING"
+        },
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xc91ebfb7-ef8a-4e00-9a0a-d49546c3494f",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T13:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x8f5cb5e9-620b-4f3e-9cf2-f4eeffa36431",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T13:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    }
+  ],
   "05/09/2025": [
     {
       "_type": "TICKET",
-      "id": "x6281a23f-55f7-40b8-a28e-b94eafa1e88a",
+      "id": "xce7882cf-e430-48b4-b870-9ea5da7be7b1",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T06:38:00.000+02:00",
@@ -1725,7 +2292,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x9a09d6c6-50fb-4307-8483-4565106b5cba",
+          "id": "x9c90d041-3f84-4d54-a8ab-9699740748d5",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1759,7 +2326,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x67cb34bc-53c4-4ed0-a01e-f6dbea91d164",
+      "id": "x9ad45d84-6f6f-478f-abcd-99f8857aa42a",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T07:38:00.000+02:00",
@@ -1781,7 +2348,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x6b1d6043-8f07-414f-8bbe-450d032d8c38",
+          "id": "xe3741bc5-007b-493b-8510-9d3a59d71bba",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1815,7 +2382,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xbbdcdec4-6d89-440f-bf6b-467eda5f4f72",
+      "id": "xc5741242-335a-49fd-bf5f-b47fc83abd55",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T08:34:00.000+02:00",
@@ -1837,7 +2404,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xd211bfdd-e8f5-4614-aac7-2a2977762966",
+          "id": "xd243b1ae-de4b-459b-b4de-ed446da7a4d3",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -1871,7 +2438,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x35a620ba-5e26-41b3-93af-69b6190037d9",
+      "id": "xc003a66d-fe2d-4947-b374-d43729102033",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T08:40:00.000+02:00",
@@ -1893,7 +2460,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x3c0685d2-48b1-4cdd-ba3c-1bd837eee71c",
+          "id": "xe4880893-68e3-46b9-b145-3efb39cea2ee",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03304",
           "destination": "Roma Termini",
@@ -1927,7 +2494,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xc07a4cf7-c1a0-4823-9fb1-4eb436576bed",
+      "id": "xee08b720-d31b-4881-958d-f6627213fe78",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T09:38:00.000+02:00",
@@ -1949,7 +2516,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xea95387a-ecee-4af1-8fd1-4d55662a6600",
+          "id": "x13c67020-73b0-4f99-8bbf-0ecb4aa28e66",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -1983,7 +2550,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x515c4588-ad27-473c-917f-87f63354e8d6",
+      "id": "x7d3a8d75-0a92-4c40-bf33-ff3c987b0662",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T10:38:00.000+02:00",
@@ -2005,7 +2572,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x0e1229dc-2dc7-48fa-9890-062db037325a",
+          "id": "x279ef857-ac68-4777-8d3f-63ee12f106fe",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2039,7 +2606,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xf4832f21-d50d-4803-9ab9-1edcc86fdcb7",
+      "id": "xf9e34041-69d3-422d-a7f7-8fe11679b052",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T11:38:00.000+02:00",
@@ -2061,7 +2628,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xb16387fb-ba48-42d1-ae73-9c834a43e211",
+          "id": "x60dd821e-cea3-4c80-b80b-ea93183c3363",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2095,7 +2662,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xefdc7502-53fb-4fad-b068-8cdb7ee93e54",
+      "id": "x335bd7bf-32ce-497d-9b3f-39c3ea471c65",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T12:38:00.000+02:00",
@@ -2117,7 +2684,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xbb8b3f69-c493-4d9e-a6b1-ddc431e33715",
+          "id": "x5467c1f9-d9d9-45a6-9258-a9a83cde41c9",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2151,7 +2718,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xc484d287-0a20-4db1-8197-4162a999bbda",
+      "id": "xc9e0fe3e-434e-4064-9da2-1375bfd12aaf",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T13:05:00.000+02:00",
@@ -2173,7 +2740,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x4e492da7-fff4-4f0e-971f-8c1c9a8a2348",
+          "id": "xe79e4aa9-29fa-4490-b9b2-3ad7ef36406e",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -2212,7 +2779,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x938f248d-6d7b-4b72-9b6c-00f6f24159fe",
+      "id": "x101e7e6b-351f-4d7d-a4a2-de90c7a82f97",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-05T13:38:00.000+02:00",
@@ -2234,7 +2801,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x47276a65-e2e6-424e-b2cc-acdfbb187728",
+          "id": "x702ab60a-c7bc-4b2e-88e3-b790782a37af",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2270,7 +2837,7 @@
   "06/09/2025": [
     {
       "_type": "TICKET",
-      "id": "x55385deb-de7c-4cfa-a1f7-7aa7210f7e3a",
+      "id": "x556202cb-554d-436e-87ce-718581ef98a0",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T06:38:00.000+02:00",
@@ -2292,7 +2859,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x510204d2-0c48-46d3-9e43-c0717683e76c",
+          "id": "x477bab97-cda0-47b1-9322-28e31621801e",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2326,7 +2893,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xbdd6ac78-65f7-4e4b-9560-832e89544924",
+      "id": "xb5a6a7ae-fea9-4451-b212-9742ac088422",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T07:38:00.000+02:00",
@@ -2348,7 +2915,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x0ce027e2-02e8-4910-8bc9-5a1383b4c814",
+          "id": "x0be696cb-a8aa-41ed-984d-fe623be7f3c5",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2382,7 +2949,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x6529d3e2-393f-49dd-97df-44c1f8b80d38",
+      "id": "xf156a986-5177-43a5-aa2d-386e48a317ff",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T08:34:00.000+02:00",
@@ -2404,7 +2971,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xbeb979cb-11bc-423a-a4ac-9d608d6a9268",
+          "id": "x9054281b-1c1a-4b81-8591-ac2d4087126c",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -2438,7 +3005,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x3168f26f-7c45-4325-bb10-391bc3a6f600",
+      "id": "x48acb913-0db5-459a-b412-2f48343b8f44",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T08:40:00.000+02:00",
@@ -2460,7 +3027,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x486818d7-27fb-456e-b064-2307fe653192",
+          "id": "x568e0a57-801e-441f-be2a-41788317b5cc",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03304",
           "destination": "Roma Termini",
@@ -2494,7 +3061,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x34f00143-d3f2-46c4-b31e-1d3d75a127fd",
+      "id": "xdb28bd75-f753-4d31-af0c-1820b7b1c3a4",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T09:34:00.000+02:00",
@@ -2516,7 +3083,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x02f46a49-e2e0-45b9-aace-5a748c7205fa",
+          "id": "xfa39ea0b-a884-40f4-96f5-ce2d24f1f222",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S03317",
           "destination": "Roma Termini",
@@ -2555,7 +3122,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xd0e876c2-cba0-489d-b2cf-91e590aa65f1",
+      "id": "xdbf35a81-acf1-4529-ab95-70683a21c560",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T09:38:00.000+02:00",
@@ -2577,7 +3144,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "x819ceb5d-903a-4008-8c06-7fce5ea0e70c",
+          "id": "x4c24351d-d3ff-4de7-8084-a11267c56bc0",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2611,7 +3178,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xb558b970-20f1-46ff-9d07-4625ff3bc1df",
+      "id": "x5e8836db-ec6e-4ae9-8d72-1364878dfafe",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T10:38:00.000+02:00",
@@ -2633,7 +3200,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xd07df454-14ef-4cbd-aa7a-2cf8dfb37011",
+          "id": "x5bba2f27-715b-4fef-af05-700486897525",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2667,7 +3234,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x061e0ddf-8d2b-4b2c-9de0-af5c0ffa1685",
+      "id": "x517e7347-7497-4c33-98cd-5f15559d85bf",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T11:38:00.000+02:00",
@@ -2689,7 +3256,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xef2cc912-7030-43f7-8c1b-096603def156",
+          "id": "xc4d2cbf2-e690-4ee9-8216-3367ffa3f699",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2723,7 +3290,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "xcedc82cb-d6b1-46ec-8bab-66cb3d694433",
+      "id": "x0361d7eb-9b8c-4657-b49a-be4548c97b1b",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T12:38:00.000+02:00",
@@ -2745,7 +3312,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xe4f4aee6-9799-4016-83df-954a8234f430",
+          "id": "x7d11e130-8218-4c39-9106-3611df0b1bc3",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
@@ -2779,7 +3346,7 @@
     },
     {
       "_type": "TICKET",
-      "id": "x3b7ecac1-74a0-4300-87c0-05d50473f815",
+      "id": "x75cc0fb4-b4f2-48e0-b4bb-cc58bee99ad5",
       "origin": "Venezia Mestre",
       "destination": "Roma Termini",
       "departureTime": "2025-09-06T13:38:00.000+02:00",
@@ -2801,7 +3368,7 @@
       "discounts": [],
       "nodes": [
         {
-          "id": "xbb60e55a-225a-46ed-8ff4-15743d696696",
+          "id": "xeaa0c45b-967f-4576-8fea-24e1194bf8ee",
           "origin": "Venezia Mestre",
           "bdoOrigin": "S02593",
           "destination": "Roma Termini",
