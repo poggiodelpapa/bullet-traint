@@ -1,1 +1,3404 @@
-{}
+{
+  "01/09/2025": [
+    {
+      "_type": "TICKET",
+      "id": "x715e5f08-0191-4186-8468-1f2968568554",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T06:38:00.000+02:00",
+      "arrivalTime": "2025-09-01T10:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9403",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9403",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x58e69a88-dc8f-4213-8113-307beca1bba9",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T06:38:00.000+02:00",
+          "arrivalTime": "2025-09-01T10:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9403",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9403",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x40dc03dc-00e6-4ab4-a24d-f9ea1fcdd66c",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T07:38:00.000+02:00",
+      "arrivalTime": "2025-09-01T11:22:00.000+02:00",
+      "duration": "3h 44min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9405",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9405",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x5d9d6ef8-3d36-46eb-9251-eba22630cd33",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T07:38:00.000+02:00",
+          "arrivalTime": "2025-09-01T11:22:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9405",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9405",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x34bc82e4-76b7-4fe0-9e2c-c9665a169ebc",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T08:34:00.000+02:00",
+      "arrivalTime": "2025-09-01T12:05:00.000+02:00",
+      "duration": "3h 31min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9466",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9466",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xec497529-3c54-4120-abe0-2032920078da",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T08:34:00.000+02:00",
+          "arrivalTime": "2025-09-01T12:05:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9466",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9466",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xb1fc0bd8-a89f-4148-98c0-7a0a71b504e2",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T08:40:00.000+02:00",
+      "arrivalTime": "2025-09-01T12:25:00.000+02:00",
+      "duration": "3h 45min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9409",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9409",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x2261fe38-f88d-47a9-9596-28d2c58edb53",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03304",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T08:40:00.000+02:00",
+          "arrivalTime": "2025-09-01T12:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9409",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9409",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x5e23a386-ccae-45ff-9a2f-a73fb4fea1a6",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T09:38:00.000+02:00",
+      "arrivalTime": "2025-09-01T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xf7bf1f43-a9d2-4387-afbb-932ae03b3526",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T09:38:00.000+02:00",
+          "arrivalTime": "2025-09-01T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xba34a157-1c3e-453f-be10-71c75ac0994e",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T10:38:00.000+02:00",
+      "arrivalTime": "2025-09-01T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xd6f79b6f-2e07-4895-8476-2d58368822ca",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T10:38:00.000+02:00",
+          "arrivalTime": "2025-09-01T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x73522bec-84d8-474f-9dc3-d336639a0800",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T11:38:00.000+02:00",
+      "arrivalTime": "2025-09-01T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x44acff8b-5ab2-4e08-a7e4-9b7db94bb7fc",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T11:38:00.000+02:00",
+          "arrivalTime": "2025-09-01T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x00cf890c-39ed-41a4-8b07-8a251433b459",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T12:38:00.000+02:00",
+      "arrivalTime": "2025-09-01T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x8d9f5d72-b15c-4506-812e-40b7aa8ea1a1",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T12:38:00.000+02:00",
+          "arrivalTime": "2025-09-01T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x610745c0-3b98-433f-a4f2-64d035921ed7",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T13:05:00.000+02:00",
+      "arrivalTime": "2025-09-01T20:45:00.000+02:00",
+      "duration": "7h 40min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x658fd695-a0bc-459d-b9d6-f2ed46da2397",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T13:05:00.000+02:00",
+          "arrivalTime": "2025-09-01T20:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": "family",
+          "message": "Family area available in coach 3 on InterCity 584",
+          "status": "WARNING"
+        },
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xc2912559-49b0-42ee-b2d9-e2b97c1e0cfe",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-01T13:38:00.000+02:00",
+      "arrivalTime": "2025-09-01T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xa62615b6-ca40-4818-ac4d-b34f5ca2052a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-01T13:38:00.000+02:00",
+          "arrivalTime": "2025-09-01T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    }
+  ],
+  "02/09/2025": [
+    {
+      "_type": "TICKET",
+      "id": "x89d1b217-4ae2-4cf2-9921-a36783882d29",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T06:38:00.000+02:00",
+      "arrivalTime": "2025-09-02T10:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9403",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9403",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xe5aaca93-fb2d-429b-b3e1-37ade1556245",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T06:38:00.000+02:00",
+          "arrivalTime": "2025-09-02T10:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9403",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9403",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x0ea5ceeb-f060-487b-afef-e47b220bd77a",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T07:38:00.000+02:00",
+      "arrivalTime": "2025-09-02T11:22:00.000+02:00",
+      "duration": "3h 44min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9405",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9405",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x25b66d33-57ee-4da6-bf8c-06eaa110c4e2",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T07:38:00.000+02:00",
+          "arrivalTime": "2025-09-02T11:22:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9405",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9405",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xede01944-f2cd-4cd6-804b-a47ffca53230",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T08:34:00.000+02:00",
+      "arrivalTime": "2025-09-02T12:05:00.000+02:00",
+      "duration": "3h 31min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9466",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9466",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xcafa1645-5439-488e-a753-a5c59279dae2",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T08:34:00.000+02:00",
+          "arrivalTime": "2025-09-02T12:05:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9466",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9466",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x307f364b-9ab3-47f8-8372-ac2e03254f93",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T08:40:00.000+02:00",
+      "arrivalTime": "2025-09-02T12:25:00.000+02:00",
+      "duration": "3h 45min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9409",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9409",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xb6695f95-b708-4bd9-aae0-0d42639d82df",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03304",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T08:40:00.000+02:00",
+          "arrivalTime": "2025-09-02T12:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9409",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9409",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x4df2562b-a8b9-48e9-9619-10829d027477",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T09:38:00.000+02:00",
+      "arrivalTime": "2025-09-02T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x8d3ac3b3-327d-42e1-8d8e-c4d0cd96bcc8",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T09:38:00.000+02:00",
+          "arrivalTime": "2025-09-02T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xd65db722-ad31-4b83-bd8d-e2c3aec3c71c",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T10:38:00.000+02:00",
+      "arrivalTime": "2025-09-02T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x475affc8-2ad3-468d-b3b7-32421a23f10a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T10:38:00.000+02:00",
+          "arrivalTime": "2025-09-02T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x704762cb-e046-46e1-8da6-24fdd96e30c6",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T11:38:00.000+02:00",
+      "arrivalTime": "2025-09-02T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xcda74271-d70e-44aa-834a-247916c5410e",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T11:38:00.000+02:00",
+          "arrivalTime": "2025-09-02T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xba0addad-3725-4bc5-8d5f-4c4fed10e0b4",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T12:38:00.000+02:00",
+      "arrivalTime": "2025-09-02T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x63dc4eb0-3d5a-4718-8ede-3c162afec7ae",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T12:38:00.000+02:00",
+          "arrivalTime": "2025-09-02T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xed03768c-a545-4957-a5b5-a13b9040d55f",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T13:05:00.000+02:00",
+      "arrivalTime": "2025-09-02T20:45:00.000+02:00",
+      "duration": "7h 40min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xc390eb9a-c80d-4168-9f8c-8c7f5296506a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T13:05:00.000+02:00",
+          "arrivalTime": "2025-09-02T20:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": "family",
+          "message": "Family area available in coach 3 on InterCity 584",
+          "status": "WARNING"
+        },
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x23483144-f626-4a84-bca0-c4a73e3b5354",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-02T13:38:00.000+02:00",
+      "arrivalTime": "2025-09-02T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x544466ef-acf1-4963-84b5-5d6e3b0bba0f",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-02T13:38:00.000+02:00",
+          "arrivalTime": "2025-09-02T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    }
+  ],
+  "03/09/2025": [
+    {
+      "_type": "TICKET",
+      "id": "xcc2ce1d8-d6f4-4977-ad6f-5acb073f3411",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T06:38:00.000+02:00",
+      "arrivalTime": "2025-09-03T10:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9403",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9403",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x4f01c89d-76f6-4815-8ebf-4e8e39e62b30",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T06:38:00.000+02:00",
+          "arrivalTime": "2025-09-03T10:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9403",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9403",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x51ca5478-cdc3-4e17-919f-5d89aad4f207",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T07:38:00.000+02:00",
+      "arrivalTime": "2025-09-03T11:22:00.000+02:00",
+      "duration": "3h 44min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9405",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9405",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xa3cc597b-ccf1-43de-9faf-54402fffde30",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T07:38:00.000+02:00",
+          "arrivalTime": "2025-09-03T11:22:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9405",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9405",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xb20ae1e2-f4c3-47a8-8235-3f75862126f6",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T08:34:00.000+02:00",
+      "arrivalTime": "2025-09-03T12:05:00.000+02:00",
+      "duration": "3h 31min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9466",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9466",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x8bce38f0-e577-497c-a262-41465ea139d7",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T08:34:00.000+02:00",
+          "arrivalTime": "2025-09-03T12:05:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9466",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9466",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x727c8ec4-4215-4aa8-afa8-76f10a5f6657",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T08:40:00.000+02:00",
+      "arrivalTime": "2025-09-03T12:25:00.000+02:00",
+      "duration": "3h 45min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9409",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9409",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x2f0dc370-386e-4d4d-ba2d-93b58f5fbd9f",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03304",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T08:40:00.000+02:00",
+          "arrivalTime": "2025-09-03T12:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9409",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9409",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x597e3f67-43e0-45b4-815e-3c313d418c42",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T09:38:00.000+02:00",
+      "arrivalTime": "2025-09-03T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xd453f7a6-4b92-4990-b875-38eeb2c3674a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T09:38:00.000+02:00",
+          "arrivalTime": "2025-09-03T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xc383902b-a395-45d6-92ea-b0b05eac3df1",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T10:38:00.000+02:00",
+      "arrivalTime": "2025-09-03T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x06a37d9d-2c58-46c5-a55a-c6f682f5d329",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T10:38:00.000+02:00",
+          "arrivalTime": "2025-09-03T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xf2f21bef-bb80-41fc-8b56-ab3ef8d3cbe4",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T11:38:00.000+02:00",
+      "arrivalTime": "2025-09-03T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x1f8c49d7-4bce-4a47-a56b-1d4d3e9084c2",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T11:38:00.000+02:00",
+          "arrivalTime": "2025-09-03T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x41a1385b-519a-4948-b1d2-0d73ee2cd060",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T12:38:00.000+02:00",
+      "arrivalTime": "2025-09-03T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x2f6ce446-2c72-449b-88fc-33d4d926ffce",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T12:38:00.000+02:00",
+          "arrivalTime": "2025-09-03T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xb311d382-e834-4512-9043-955978901cfd",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T13:05:00.000+02:00",
+      "arrivalTime": "2025-09-03T20:45:00.000+02:00",
+      "duration": "7h 40min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x24667867-4ccf-41c0-be83-73cdbb393c3b",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T13:05:00.000+02:00",
+          "arrivalTime": "2025-09-03T20:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": "family",
+          "message": "Family area available in coach 3 on InterCity 584",
+          "status": "WARNING"
+        },
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x439f5d76-4e75-4bb8-95fa-f06a041b23fd",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-03T13:38:00.000+02:00",
+      "arrivalTime": "2025-09-03T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x2d973ffd-b9f4-4000-afac-bfcf5c4cb0b8",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-03T13:38:00.000+02:00",
+          "arrivalTime": "2025-09-03T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    }
+  ],
+  "04/09/2025": [
+    {
+      "_type": "TICKET",
+      "id": "x549d8463-7635-4284-a5e5-231969809bd8",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T06:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T10:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9403",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9403",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x207afead-a544-46a3-a2a9-11fa84646eb2",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T06:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T10:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9403",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9403",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xa66bc114-092f-449a-90c3-a1be7fec1c32",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T07:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T11:22:00.000+02:00",
+      "duration": "3h 44min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9405",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9405",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x191aaf8e-37ae-45d1-a39c-9b947261d25f",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T07:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T11:22:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9405",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9405",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x467d8b87-ffba-4297-aceb-181f13e906a1",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T08:34:00.000+02:00",
+      "arrivalTime": "2025-09-04T12:05:00.000+02:00",
+      "duration": "3h 31min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9466",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9466",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xb600eaa1-a762-4f6e-a196-5a9e60601404",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T08:34:00.000+02:00",
+          "arrivalTime": "2025-09-04T12:05:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9466",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9466",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x48312d31-3db2-48c1-84ed-0f27344b42e4",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T08:40:00.000+02:00",
+      "arrivalTime": "2025-09-04T12:25:00.000+02:00",
+      "duration": "3h 45min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9409",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9409",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xd1a9ba6a-e84f-4318-9b1f-80b289a21831",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03304",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T08:40:00.000+02:00",
+          "arrivalTime": "2025-09-04T12:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9409",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9409",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x9cee6ca7-cecd-4c93-a07c-cdda5ac5f1a5",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T09:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x9786c6a3-3207-4f1b-9f0c-bf98e56a2aef",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T09:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x92e06925-9374-4f2f-ab22-b5d3cd84199f",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T10:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xe5c3b71d-03c7-42da-8ab6-c6e2b66cd910",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T10:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x1f330f11-4e2d-4983-b3c3-ed7222d1370f",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T11:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x09d0cf8c-1814-43e0-915e-da3e102ebd28",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T11:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x698fc783-a465-4e8e-a9c3-812faffff312",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T12:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xb6eefecc-511e-4565-b62a-412366140325",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T12:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xf3d3f524-4a15-4279-8728-a1dbad69e2a5",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T13:05:00.000+02:00",
+      "arrivalTime": "2025-09-04T20:45:00.000+02:00",
+      "duration": "7h 40min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x8fca32cc-c48b-416f-8284-4e10faaed4ff",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T13:05:00.000+02:00",
+          "arrivalTime": "2025-09-04T20:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": "family",
+          "message": "Family area available in coach 3 on InterCity 584",
+          "status": "WARNING"
+        },
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xa9162e6b-be0f-46ba-bb05-0be29d497eba",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-04T13:38:00.000+02:00",
+      "arrivalTime": "2025-09-04T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x13ef3136-6be1-41b8-99d9-c4b999620947",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-04T13:38:00.000+02:00",
+          "arrivalTime": "2025-09-04T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    }
+  ],
+  "05/09/2025": [
+    {
+      "_type": "TICKET",
+      "id": "x1d224d69-41a6-44d3-b3c5-a1164564f2ee",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T06:38:00.000+02:00",
+      "arrivalTime": "2025-09-05T10:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9403",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9403",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x850adf15-5e3f-4166-bb99-79ab9d7a7688",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T06:38:00.000+02:00",
+          "arrivalTime": "2025-09-05T10:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9403",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9403",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xaa0ffeee-316d-4337-904c-f540bc3b7e3b",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T07:38:00.000+02:00",
+      "arrivalTime": "2025-09-05T11:22:00.000+02:00",
+      "duration": "3h 44min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9405",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9405",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x3553e083-1a3b-4d17-841f-58e037635f1b",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T07:38:00.000+02:00",
+          "arrivalTime": "2025-09-05T11:22:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9405",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9405",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x0090e14d-55d2-4eef-85e5-b9926f2385ec",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T08:34:00.000+02:00",
+      "arrivalTime": "2025-09-05T12:05:00.000+02:00",
+      "duration": "3h 31min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9466",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9466",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x75992f6d-4450-4d79-aa13-3e8d979e3414",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T08:34:00.000+02:00",
+          "arrivalTime": "2025-09-05T12:05:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9466",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9466",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x180b5695-b051-4048-a2d5-bfafd392c277",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T08:40:00.000+02:00",
+      "arrivalTime": "2025-09-05T12:25:00.000+02:00",
+      "duration": "3h 45min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9409",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9409",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x8b63c892-6517-4734-bf3e-580f3524dcd8",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03304",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T08:40:00.000+02:00",
+          "arrivalTime": "2025-09-05T12:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9409",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9409",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x454eedd9-bdda-4a07-9709-2571bffa7ab5",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T09:38:00.000+02:00",
+      "arrivalTime": "2025-09-05T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x3f5ee6e8-8647-49da-90ca-0c7da4a3ae3a",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T09:38:00.000+02:00",
+          "arrivalTime": "2025-09-05T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x57e6118b-7002-485d-8318-fef6f70bf225",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T10:38:00.000+02:00",
+      "arrivalTime": "2025-09-05T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x01b330b6-5560-4cae-a49c-38f96ce3ae9c",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T10:38:00.000+02:00",
+          "arrivalTime": "2025-09-05T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xde87d46c-288b-4491-bbe5-cc911a28e694",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T11:38:00.000+02:00",
+      "arrivalTime": "2025-09-05T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xc9323bfa-a733-422b-9969-11f7b118ab1c",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T11:38:00.000+02:00",
+          "arrivalTime": "2025-09-05T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x80168f53-c046-48b3-874e-623066460b37",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T12:38:00.000+02:00",
+      "arrivalTime": "2025-09-05T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xaf54f478-94f7-4ab3-a0bc-826074548cfc",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T12:38:00.000+02:00",
+          "arrivalTime": "2025-09-05T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xa0cec225-0db7-4427-9c9f-0d67ed791630",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T13:05:00.000+02:00",
+      "arrivalTime": "2025-09-05T20:45:00.000+02:00",
+      "duration": "7h 40min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x5eb66195-bda8-4199-b098-ed09d8454eee",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T13:05:00.000+02:00",
+          "arrivalTime": "2025-09-05T20:45:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": "family",
+          "message": "Family area available in coach 3 on InterCity 584",
+          "status": "WARNING"
+        },
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x5fc742b1-c88b-4a0d-8198-58a91e6f0ec8",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-05T13:38:00.000+02:00",
+      "arrivalTime": "2025-09-05T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x2e65fa45-6403-438f-a1cf-e0e8103dd5a5",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-05T13:38:00.000+02:00",
+          "arrivalTime": "2025-09-05T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    }
+  ],
+  "06/09/2025": [
+    {
+      "_type": "TICKET",
+      "id": "x57423cd4-6ce4-4be3-abaa-d9a187d94fcc",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T06:38:00.000+02:00",
+      "arrivalTime": "2025-09-06T10:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9403",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9403",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x295c557e-0bc1-4430-93e8-5bd72f46f0e1",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T06:38:00.000+02:00",
+          "arrivalTime": "2025-09-06T10:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9403",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9403",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x0b80ea64-a971-47c3-b746-f11cfe608f8b",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T07:38:00.000+02:00",
+      "arrivalTime": "2025-09-06T11:22:00.000+02:00",
+      "duration": "3h 44min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9405",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9405",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x01668f4d-447c-4da7-b839-76b339bf3244",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T07:38:00.000+02:00",
+          "arrivalTime": "2025-09-06T11:22:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9405",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9405",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x93550299-d52b-4423-90fa-01ee8d769dd5",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T08:34:00.000+02:00",
+      "arrivalTime": "2025-09-06T12:05:00.000+02:00",
+      "duration": "3h 31min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9466",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9466",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x378ca93f-e4c0-4e68-9aaf-304a5750ca8d",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T08:34:00.000+02:00",
+          "arrivalTime": "2025-09-06T12:05:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9466",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9466",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xb26d744c-50c5-4e97-baef-16b77e49fe3d",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T08:40:00.000+02:00",
+      "arrivalTime": "2025-09-06T12:25:00.000+02:00",
+      "duration": "3h 45min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9409",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9409",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x26acad32-9766-4b1f-aafc-a3c4a82ec283",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03304",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T08:40:00.000+02:00",
+          "arrivalTime": "2025-09-06T12:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9409",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9409",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x4d3be1d8-d024-4bad-a608-8ca39a26d515",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T09:34:00.000+02:00",
+      "arrivalTime": "2025-09-06T16:20:00.000+02:00",
+      "duration": "6h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "584",
+          "trainCategory": "Intercity",
+          "acronym": "IC",
+          "denomination": "Intercity",
+          "name": "584",
+          "logoId": "IC",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xefb7ac6c-4c85-4e05-929c-7873d26f7d76",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S03317",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T09:34:00.000+02:00",
+          "arrivalTime": "2025-09-06T16:20:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "584",
+            "trainCategory": "Intercity",
+            "acronym": "IC",
+            "denomination": "Intercity",
+            "name": "584",
+            "logoId": "IC",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": "family",
+          "message": "Family area available in coach 3 on InterCity 584",
+          "status": "WARNING"
+        },
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xfcc2b62c-2821-46c6-864c-b69235a78c69",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T09:38:00.000+02:00",
+      "arrivalTime": "2025-09-06T13:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9411",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9411",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x06ee9be4-5c9d-408e-ac09-c71e9f5e4446",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T09:38:00.000+02:00",
+          "arrivalTime": "2025-09-06T13:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9411",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9411",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x1d235893-ef66-4877-8c8d-7fea7e825190",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T10:38:00.000+02:00",
+      "arrivalTime": "2025-09-06T14:25:00.000+02:00",
+      "duration": "3h 47min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9413",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9413",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xc9892b78-e618-4312-9912-86113f14e5e8",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T10:38:00.000+02:00",
+          "arrivalTime": "2025-09-06T14:25:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9413",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9413",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xd533155f-6f6f-426c-960b-ca004b8e6fa7",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T11:38:00.000+02:00",
+      "arrivalTime": "2025-09-06T15:30:00.000+02:00",
+      "duration": "3h 52min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9415",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA 1000",
+          "name": "9415",
+          "logoId": "FR1000",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x3b18e69a-2d8d-4516-ba2e-226870df3356",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T11:38:00.000+02:00",
+          "arrivalTime": "2025-09-06T15:30:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9415",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA 1000",
+            "name": "9415",
+            "logoId": "FR1000",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "xaa159a25-7967-47b1-933d-762186ae384a",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T12:38:00.000+02:00",
+      "arrivalTime": "2025-09-06T16:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "8419",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "8419",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "x23d1efc9-3ab2-47ab-84cb-7358bbec338c",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T12:38:00.000+02:00",
+          "arrivalTime": "2025-09-06T16:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "8419",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "8419",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    },
+    {
+      "_type": "TICKET",
+      "id": "x82d4a310-3be2-40f4-a6cf-240bae256cdd",
+      "origin": "Venezia Mestre",
+      "destination": "Roma Termini",
+      "departureTime": "2025-09-06T13:38:00.000+02:00",
+      "arrivalTime": "2025-09-06T17:24:00.000+02:00",
+      "duration": "3h 46min",
+      "status": "NOT_SALEABLE",
+      "trains": [
+        {
+          "description": "9421",
+          "trainCategory": "Frecciarossa",
+          "acronym": "FR",
+          "denomination": "FRECCIAROSSA",
+          "name": "9421",
+          "logoId": "FR",
+          "urban": false
+        }
+      ],
+      "price": null,
+      "discounts": [],
+      "nodes": [
+        {
+          "id": "xaba9e169-a8af-4e0f-a36d-1747b0c71dd7",
+          "origin": "Venezia Mestre",
+          "bdoOrigin": "S02593",
+          "destination": "Roma Termini",
+          "departureTime": "2025-09-06T13:38:00.000+02:00",
+          "arrivalTime": "2025-09-06T17:24:00.000+02:00",
+          "salable": false,
+          "train": {
+            "description": "9421",
+            "trainCategory": "Frecciarossa",
+            "acronym": "FR",
+            "denomination": "FRECCIAROSSA",
+            "name": "9421",
+            "logoId": "FR",
+            "urban": false
+          },
+          "bluJetMessage": null,
+          "blueJet": false
+        }
+      ],
+      "additionalPrice": null,
+      "description": null,
+      "validities": null,
+      "_messages": [
+        {
+          "imageId": null,
+          "message": "It's not possible to buy a travel solution if the departure date is before current date.",
+          "status": "INFO"
+        },
+        null
+      ]
+    }
+  ]
+}
